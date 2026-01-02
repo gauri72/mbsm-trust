@@ -1,0 +1,26 @@
+# macOS
+.DS_Store
+
+# Node modules
+node_modules/
+
+# Next.js
+.next/
+out/
+build/
+
+# Environment variables
+.env*.local
+
+# IDE
+.vscode/
+.idea/
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Optional: exclude documentation if not needed
+# documentation/
