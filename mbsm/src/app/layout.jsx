@@ -9,7 +9,7 @@ import RouteScrollToTop from "@/helper/RouteScrollToTop";
 
 export const metadata = {
   title: "MBSM Trust",
-  description: "Nonprofit & Fundraising Charity NEXT JS Template.",
+  description: "Mangal Bhakt Seva Mandal Trust - Spiritual service and humanitarian organization dedicated to serving humanity through compassionate service.",
 };
 
 export default function RootLayout({ children }) {

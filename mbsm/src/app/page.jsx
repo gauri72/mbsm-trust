@@ -16,7 +16,7 @@ import CustomCursor from "@/helper/CustomCursor";
 
 export const metadata = {
   title: "MBSM Trust",
-  description: "Nonprofit & Fundraising Charity NEXT JS Template.",
+  description: "Mangal Bhakt Seva Mandal Trust - Spiritual service and humanitarian organization dedicated to serving humanity through compassionate service.",
 };
 
 const page = () => {
