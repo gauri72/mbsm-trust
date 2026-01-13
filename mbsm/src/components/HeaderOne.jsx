@@ -136,6 +136,13 @@ const HeaderOne = () => {
                         </li>
                         <li
                           className={`navbar__item nav-fade ${
+                            ["/our-blogs", "/blog"].includes(pathname) ? "active" : ""
+                          }`}
+                        >
+                          <Link href='/our-blogs'>Our Blogs</Link>
+                        </li>
+                        <li
+                          className={`navbar__item nav-fade ${
                             ["/contact-us"].includes(pathname) ? "active" : ""
                           }`}
                         >

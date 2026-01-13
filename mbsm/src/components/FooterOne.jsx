@@ -15,7 +15,7 @@ const FooterOne = () => {
               >
                 <div className='footer-two__widget-logo'>
                   <Link href='/'>
-                    <img src='assets/images/logo-light.png' alt='Image_inner' />
+                    <img src='/assets/images/logo-light.png' alt='Image_inner' />
                   </Link>
                 </div>
                 <div className='footer-two__widget-content'>
@@ -64,6 +64,12 @@ const FooterOne = () => {
                       <Link href='/donate-us'>
                         <i className='fa-solid fa-arrow-right' />
                         Donate Us
+                      </Link>
+                    </li>
+                    <li>
+                      <Link href='/our-blogs'>
+                        <i className='fa-solid fa-arrow-right' />
+                        Our Blogs
                       </Link>
                     </li>
                     <li>
@@ -220,7 +226,7 @@ const FooterOne = () => {
         </div>
         <div className='sprade' data-aos='zoom-in' data-aos-duration={1000}>
           <img
-            src='assets/images/sprade.png'
+            src='/assets/images/sprade.png'
             alt='Image_inner'
             className='base-img'
           />
@@ -230,7 +236,7 @@ const FooterOne = () => {
           data-aos='zoom-in'
           data-aos-duration={1000}
         >
-          <img src='assets/images/sprade-light.png' alt='Image_inner' />
+          <img src='/assets/images/sprade-light.png' alt='Image_inner' />
         </div>
       </footer>
     </>

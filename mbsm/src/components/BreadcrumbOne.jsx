@@ -13,14 +13,14 @@ const BreadcrumbOne = ({ title }) => {
         </div>
       </div>
       <div className='banner-bg'>
-        <img src='assets/images/banner/banner-bg.png' alt='Image_inner' />
+        <img src='/assets/images/banner/banner-bg.png' alt='Image_inner' />
       </div>
       <div className='shape'>
-        <img src='assets/images/shape.png' alt='Image_inner' />
+        <img src='/assets/images/shape.png' alt='Image_inner' />
       </div>
       <div className='sprade' data-aos='zoom-in' data-aos-duration={1000}>
         <img
-          src='assets/images/sprade-base.png'
+          src='/assets/images/sprade-base.png'
           alt='Image_inner'
           className='base-img'
         />
