@@ -78,7 +78,7 @@ const BlogInner = () => {
     },
     {
       id: 9,
-      image: "blog/eight.jpg",
+      image: "blog/nine.jpg",
       category: "Spiritual Guidance",
       date: "08/01/2025",
       title: "भगवंत दरवेळी वाचवतो, पण आपण स्वतःला सुधारतो का?",
@@ -87,7 +87,7 @@ const BlogInner = () => {
     },
     {
       id: 10,
-      image: "blog/one.jpg",
+      image: "blog/ten.jpg",
       category: "Spiritual Guidance",
       date: "08/01/2025",
       title: "मानव जन्म, षडरिपू आणि गुरूचे महत्व",
@@ -175,3 +175,4 @@ const BlogInner = () => {
 };
 
 export default BlogInner;
+

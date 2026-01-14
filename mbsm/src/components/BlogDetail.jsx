@@ -86,7 +86,7 @@ const BlogDetail = ({ blogId }) => {
     },
     {
       id: 9,
-      image: "blog/eight.jpg",
+      image: "blog/nine.jpg",
       category: "Spiritual Guidance",
       date: "08/01/2025",
       title: "भगवंत दरवेळी वाचवतो, पण आपण स्वतःला सुधारतो का?",
@@ -97,7 +97,7 @@ const BlogDetail = ({ blogId }) => {
     },
     {
       id: 10,
-      image: "blog/one.jpg",
+      image: "blog/ten.jpg",
       category: "Spiritual Guidance",
       date: "08/01/2025",
       title: "मानव जन्म, षडरिपू आणि गुरूचे महत्व",
@@ -171,3 +171,4 @@ const BlogDetail = ({ blogId }) => {
 };
 
 export default BlogDetail;
+
