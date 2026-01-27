@@ -9,7 +9,8 @@ import RouteScrollToTop from "@/helper/RouteScrollToTop";
 
 export const metadata = {
   title: "MBSM Trust",
-  description: "Mangal Bhakt Seva Mandal Trust - Spiritual service and humanitarian organization dedicated to serving humanity through compassionate service.",
+  description:
+    "Mangal Bhakta Seva Mandal Trust (MBSM Trust) is a spiritual and charitable organization serving society with devotion and seva.",
 };
 
 export default function RootLayout({ children }) {

@@ -172,3 +172,4 @@ const BlogDetail = ({ blogId }) => {
 
 export default BlogDetail;
 
+

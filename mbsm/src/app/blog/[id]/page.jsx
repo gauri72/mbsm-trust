@@ -106,3 +106,4 @@ const page = ({ params }) => {
 
 export default page;
 
+
