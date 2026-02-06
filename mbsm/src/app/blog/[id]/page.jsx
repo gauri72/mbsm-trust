@@ -61,6 +61,21 @@ export async function generateMetadata({ params }) {
       id: 10,
       title: "मानव जन्म, षडरिपू आणि गुरूचे महत्व",
       description: "आपला जन्म हा मानव योनीतला जन्म आहे. मानव योनीतला जन्म म्हणजे वासनेतला जन्म. आपण असेच प्रकट नाही झालो, आपण आपल्या आई वडिलांच्या पोटी जन्म घेतला आहे."
+    },
+    {
+      id: 11,
+      title: "सुख, शांती आणि समाधानाची दारे कशी उघडतील?",
+      description: "आपल्या पात्रते पेक्षा, आपल्या लायकी पेक्षा जास्त ओझं आपण आपल्या मांडीवर, आपल्या पाठीवर ओढून घेतलं आहे."
+    },
+    {
+      id: 12,
+      title: "Food is Sacred; Wastage is Strictly Prohibited at the Annadan Seva of MBSM",
+      description: "At the serene Shankar Maharaj Math of Mangal Bhakt Seva Mandal in Ahilyanagar, the continuous Annadan Seva is carried out with deep devotion and discipline."
+    },
+    {
+      id: 13,
+      title: "What's In a Name? Faith, Peace & Power!",
+      description: "William Shakespeare once asked, “What’s in a name?” For the disciples of Shree Vishweshwar Swami Maharaj, this name is a powerful support and source of peace and miracles."
     }
   ];
 
@@ -105,5 +120,6 @@ const page = ({ params }) => {
 };
 
 export default page;
+
 
 

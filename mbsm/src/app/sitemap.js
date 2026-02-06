@@ -20,8 +20,8 @@ export default function sitemap() {
     priority: path === "" ? 1.0 : 0.8,
   }));
 
-  // Blog detail pages (IDs 1–10)
-  const blogIds = Array.from({ length: 10 }, (_, i) => i + 1);
+  // Blog detail pages (IDs 1–13)
+  const blogIds = Array.from({ length: 13 }, (_, i) => i + 1);
 
   const blogEntries = blogIds.map(id => ({
     url: `${BASE_URL}/blog/${id}`,
@@ -32,4 +32,5 @@ export default function sitemap() {
 
   return [...staticEntries, ...blogEntries];
 }
+
 
