@@ -106,7 +106,7 @@ const BlogDetail = ({ blogId }) => {
     },
     {
       id: 11,
-      image: "blog/one.jpg",
+      image: "blog/eleven.jpg",
       category: "Spiritual Guidance",
       date: "06/02/2026",
       title: "सुख, शांती आणि समाधानाची दारे कशी उघडतील?",
@@ -115,7 +115,7 @@ const BlogDetail = ({ blogId }) => {
     },
     {
       id: 12,
-      image: "blog/four.jpg",
+      image: "blog/twelve.jpg",
       category: "Community Service",
       date: "06/02/2026",
       title: "Food is Sacred; Wastage is Strictly Prohibited at the Annadan Seva of MBSM",
@@ -124,7 +124,7 @@ const BlogDetail = ({ blogId }) => {
     },
     {
       id: 13,
-      image: "blog/three.jpg",
+      image: "blog/thirteen.jpg",
       category: "Spiritual Journey",
       date: "06/02/2026",
       title: "What's In a Name? Faith, Peace & Power!",
