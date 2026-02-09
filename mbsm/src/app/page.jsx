@@ -15,9 +15,9 @@ import AOSWrap from "@/helper/AOSWrap";
 import CustomCursor from "@/helper/CustomCursor";
 
 export const metadata = {
-  title: "MBSM Trust",
+  title: "Mangal Bhakta Seva Mandal Trust (MBSM Trust) | Shankar Maharaj Math Ahilyanagar",
   description:
-    "Mangal Bhakta Seva Mandal Trust (MBSM Trust) is a spiritual and charitable organization serving society with devotion and seva.",
+    "Mangal Bhakta Seva Mandal Trust (MBSM Trust) is a spiritual and charitable organization serving society with devotion and seva at Shankar Maharaj Math, MIDC, Ahilyanagar.",
 };
 
 const page = () => {

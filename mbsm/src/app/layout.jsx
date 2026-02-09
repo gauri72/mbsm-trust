@@ -8,7 +8,7 @@ import InitializeAOS from "@/helper/InitializeAOS";
 import RouteScrollToTop from "@/helper/RouteScrollToTop";
 
 export const metadata = {
-  title: "MBSM Trust",
+  title: "Mangal Bhakta Seva Mandal Trust (MBSM Trust)",
   description:
     "Mangal Bhakta Seva Mandal Trust (MBSM Trust) is a spiritual and charitable organization serving society with devotion and seva.",
 };
