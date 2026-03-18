@@ -129,7 +129,190 @@ const BlogDetail = ({ blogId }) => {
       date: "06/02/2026",
       title: "What's In a Name? Faith, Peace & Power!",
       author: "MBSM Trust",
-      content: `William Shakespeare once asked, “What’s in a name?” Well, only the disciples and devotees of our Guru, Shree Vishweshwar Swami Maharaj (Bhaau), know what a name can actually hold. We all have names with different meanings but Shree Vishweshwar Swami Maharaj is not just a name. It is a strong support, a feeling, a pleasant breeze of relief and an assurance. It is a name on which we can rely on our hopes, our breath, and our life. 'Vishweshwar' is a name bestowed personally by God to our Guru and is one of the countless sacred names of Lord Shiva. Vishweshwar to us means 'Vishwas' (faith) and our 'Vishwa' (World). Shree Vishweshwar Swami Maharaj is a powerful name in which the entire power of Sadguru Shankar Maharaj dwells. Those who have deeply fallen in love with this name understand the real depth it carries. Those who trust this name triumph in the most difficult battles of life. Those who surrender their lives to this name find the real meaning of miracles. Faith, devotion, love, positivity, divinity, miracles and grace, everything lies in this one name. The people who have etched this name on their hearts experience the highest peace and protection. We all take pride in recognizing and serving this glorious name. Today is the special day when this beautiful name incarnated again in this world transformed lakhs of lives. We're truly fortunate to be guided and associated with this name. We are blessed and proud that this name has held our hands, like a parent, to show us the way to spiritual and overall progress in life. Mangal Bhakt Seva Mandal wishes our beloved Bhaau, A Many Happy Returns of the Day!`
+      content: `William Shakespeare once asked, “What’s in a name?” Well, only the disciples and devotees of our Guru, Shree Vishweshwar Swami Maharaj (Bhaau), know what a name can actually hold. We all have names with different meanings but Shree Vishweshwar Swami Maharaj is not just a name. It is a strong support, a feeling, a pleasant breeze of relief and an assurance. It is a name on which we can rely on our hopes, our breath, and our life. 'Vishweshwar' is a name bestowed personally by God to our Guru and is one of the countless sacred names of Lord Shiva. Vishweshwar to us means 'Vishwas' (faith) and our 'Vishwa' (World). Shree Vishweshwar Swami Maharaj is a powerful name in which the entire power of Sadguru Shankar Maharaj dwells. Those who have deeply fallen in love with this name understand the real depth it carries. Those who trust this name triumph in the most difficult battles of life. Those who surrender their lives to this name find the real meaning of miracles. Faith, devotion, love, positivity, divinity, miracles and grace, everything lies in this one name. The people who have etched this name on their hearts experience the highest peace and protection. We all take pride in recognizing and serving this glorious name. Today is the special day when this beautiful name incarnated again in this world transformed lakhs of lives. We're truly fortunate to be guided and associated with this name. We are blessed and proud that this name has held our hands, like a parent, to show us the way to spiritual and overall progress in life. Mangal Bhakt Seva Mandal wishes our beloved Bhaau, A Many Happy Returns of the Day!`,
+    },
+    {
+      id: 14,
+      image: "blog/fourteen.jpg",
+      category: "Spiritual Guidance",
+      date: "18/03/2026",
+      title: "मानव जन्म: मुक्तीचा मार्ग",
+      author: "MBSM Trust",
+      content: `या अवघ्या ब्रम्हांडामध्ये एकूण ८४ लाख योनी आहेत. ८४ लाख योनींमध्ये मानव योनी ही सर्वात विशेष आणि सर्वोत्तम योनी आहे. या मानव योनीत जन्म मिळण्यासाठी अपार पुण्य आणि उत्तम नशीब लागतं. आपण खरंच भाग्यवान आहोत की आपल्याला या जन्मात मानव जन्म लाभला आहे.
+
+मानव हा एकमेव प्राणी आहे ज्याला बुद्धी आणि वाणीचं वरदान मिळालं आहे. फक्त मनुष्यालच देवाने विवेक आणि वाणी देऊन पृथ्वीवर पाठवलं आहे. इतर कोणत्याही जीवाकडे या क्षमता नाहीत.
+
+मानव जन्मातच भक्ती करता येते, पुण्य आपल्या खात्यात साठवता येतं आणि ८४ लाख योनींच्या फेऱ्यांतून मुक्ती मिळवता येते. म्हणूनच मानव जन्म हा मुक्तीचा दरवाजा आहे. पण या जन्मात जसा मुक्तीचा दरवाजा खुला होतो, तसाच पुन्हा ८४ लाख योनींचा चक्रव्यूह देखील तयार होतो.
+
+मानव जन्म हे वरदानही आहे आणि परीक्षाही. याचं कारणही आपल्याला मिळालेलं बुद्धी आणि वाणीचं वरदानच आहे. देव, यक्ष आणि गंधर्व सुद्धा मानव जन्म मिळावा यासाठी उत्सुक असतात, कारण ना स्वर्गात साधना, नामस्मरण, पुण्य करता येते, ना नरकात. भक्ती आणि पुण्य फक्त मृत्युलोकात, मानव योनीतच करता येतं.
+
+म्हणून आपण आपल्या बुद्धी आणि वाणीचा योग्य वापर केला पाहिजे. षडरिपूंचा समतोल ठेवला पाहिजे. आपला जन्म वासनेतून झाल्यामुळे षडरिपू जन्मापासून आपल्या प्रत्येकाच्या सोबत आले आहेत. त्यांच्यावर बंधन घालण्याची गरज नाही, फक्त त्यांचा योग्य समतोल राखणं महत्त्वाचं आहे.
+
+हे जर आपण वेळेत केलं नाही, तर आपल्या पुण्यापेक्षा आपल्या पापाचं ओझं जास्त वाढत जाईल, आणि मग पुढचे कित्येक जन्म आपण अनेक वेगवेगळ्या योनींमध्ये फिरत राहू.
+
+आणि हे कलियुग आहे ज्याचा स्वामी रावण, कली आहे. तो आपल्या सर्वांच्या मनावर राज्य करतो. म्हणून कलियुगात या सर्व गोष्टींचं प्रत्येक क्षणी भान ठेवणं अत्यंत आवश्यक आहे.`
+    },
+    {
+      id: 15,
+      image: "blog/fifteen.jpg",
+      category: "Spiritual Guidance",
+      date: "18/03/2026",
+      title: "जो खुदको जानता हैं, वहीं मुझे पहचानता हैं|",
+      author: "MBSM Trust",
+      content: `श्री दत्तप्रभूंच्या सप्तशी॔ स्वरुपातलं, शेवटचं, स्वरुप म्हणजे सद्गुरु शंकर महाराज. "शं" म्हणजे कल्याण आणि "कर" म्हणजे कल्याण करणारा. सर्वांचं कल्याण करणारे शंकर महाराज.
+
+शंकर महाराज त्यांच्या भक्तांना कायम सांगतात "जो खुदको जानता हैं, वहीं मुझे पहचानता हैं|" किती सरळ आणि सोप्प आहे. पण आपल्याला हे वाक्य कळून ही वळत नाही.
+
+आपण स्वतःला ख-या अर्थाने ओळखत नाही. आपण आपली पात्रता ओळखत नाही. आपल्याला फक्त आपलं नाव आणि आपण व्यवसायाने कोण आहोत हे माहीत आहे.
+
+आज आपल्याला कोणी विचारलं की "तू कोण आहेस?" तर आपण पटकन आपलं नाव आणि आपण प्रोफेशनली काय करतो हे सांगु. पण आपल्या अंतर्मनाला, आपल्या आत्म्याला आपण ओळखत नाही.
+
+कारण आपण कधी हे अंतर्मुख होऊन स्वतःला विचारलच नाही की आपण नक्की कोण आहोत. आणि जोपर्यंत त्याचं उत्तर आपल्याला मिळत नाही आणि आपण आपल्याला जाणून घेत नाही तोपर्यंत शंकर महाराज आपल्याला कळणार नाहीत. तोपर्यंत आपल्याला भगवत प्राप्त होणार नाही.
+
+त्यासाठी तर शंकर महाराज म्हणतात, "समझता है तो समझ ले, बाद में पछताना है, मेरा क्या बिघडता है, रोना धोना तेरा हैं|"
+
+अंतिम श्वासाला, वेळ निघून गेल्यावर ह्याची जाणीव होऊन काहीच उपयोग नाही. तेव्हा आपल्याला पश्चात बुद्धी म्हणजेच पश्चाताप होतो.
+
+म्हणुन वेळेत आपण ही शंकर महाराजांची शिकवण, एक अमूल्य सल्ला समजून आमलात आणायला पाहिजे.
+
+जर आपण आपली खरी लायकी ओळखली, आपले गुण दोष ओळखले आणि आपण स्वतःला आपल्या सामाजिक स्थानापलिकडे पाहिलं तरच आपण आपल्याला ओळखू शकु आणि या जन्मात आपलं पृथ्वीवर काय ध्येय आहे हे आपल्याला कळेल.
+
+याने फक्त आध्यात्मिक गती नव्हे तर भौतिक जगात ही गती मिळू शकेल.`
+    },
+    {
+      id: 16,
+      image: "blog/sixteen.jpg",
+      category: "Spiritual Guidance",
+      date: "18/03/2026",
+      title: "सद्गुरु कृपा",
+      author: "MBSM Trust",
+      content: `सद्गुरुंची कृपा कधीही शब्दात व्यक्त करता येत नाही. कारण अनुभवाविना ती सांगता येत नाही आणि जरी आपण सांगितलं तरी ते इतरांना मान्य होत नाही.
+
+अशा या सद्गुरु कृपेचा ज्याने लाभ घेतला, त्याचं जीवन अंतर्बाह्य बदलून जातं. त्याला स्वतःला देखील कळत नाही की आपण कधी इतके बदललो आणि कसे बदललो.
+
+मात्र अशी कृपा, असा साक्षात्कार आणि असा उद्धार प्रत्येकाच्या भाग्यात नसतो. किंबहुना प्रत्येकाच्या भाग्यात असूनही त्याला त्याचा लाभ घेता येत नाही. त्याला त्या अमूल्य कृपेची जाणीव होत नाही.
+
+कारण या जन्मामध्ये, या मानव योनीमध्ये या षडरिपूंचं इतकं प्राबल्य आपल्यावर आहे, इतकं आधिपत्य हे षडरिपू आपल्यावर गाजवत असतात की सगळं समजत असूनही आपल्याला वळत नाही. आणि जेव्हा ते समजतं, वळतं तेव्हा वेळ निघून गेलेली असते.
+
+आपला अहंकार आपल्याला ह्या जाणीवेपासून दूर ठेवतो. प्रत्येक कृपेत आपण फक्त लॉजिक शोधतो.
+
+सद्गुरुंच्या कृपेवर कधीही शंका घ्यायची नसते. कारण या जगात त्यांना अशक्य असं काही नाहिये. आणि त्यांच्या लीला, कार्यपद्धती आपल्या समजण्यापलिकडे असतात. त्यामुळे आपली बुद्धी लावून उपयोग नाही.
+
+शेवटी "मानो तो चमत्कार, ना मानो तो सब बेकार!" म्हणून जीवनात घडणारी प्रत्येक चांगली घटना, नकळत टळलेलं संकट किंवा लहान-मोठा चमत्कार हा केवळ योगायोग न मानता गुरुकृपा मानावी.
+
+जेव्हा कळत नाही की आपल्या कित्तेक अडचणी कशा मिटल्या आणि आपण सहजपणे कसे तरलो तेव्हा समजावं की आपल्यावर आपल्या सद्गुरुंची कृपा झाली आहे.
+
+आपला प्रत्येक श्वासही एक चमत्कार आहे, असे समजून नेहमी कृतज्ञ राहावे. अशी गुरुकृपेची जाणीव झाल्यावर मनात जी अनुभूती उमलते, ती खरंच दिव्य असते.
+
+अशी असीम श्रद्धा असेल तरच गुरुकृपेचा ख-या अर्थाने लाभ घेता येतो आणि आध्यात्मिक गती प्राप्त होते.`
+    },
+    {
+      id: 17,
+      image: "blog/seventeen.jpg",
+      category: "Spiritual Guidance",
+      date: "18/03/2026",
+      title: "\"अवलिया\", ज्यांच्या शब्दकोशात अशक्य असा शब्दच नाही!",
+      author: "MBSM Trust",
+      content: `"अवलिया", ज्यांच्या शब्दकोशात अशक्य असा शब्दच नाही!
+
+ज्यांच्या कटी लंगोट, काखेत झोळी आणि संगे चार श्वान आहेत त्यांना अवधूत चिंतन म्हंटलय. जो स्वयं दाता आहे, ज्याच्या नामातच दातृत्व सामावलं आहे, तो दत्त आहे. तो कधीच काही घेत नाही, तो केवळ सतत मोकळ्या हाताने देत राहतो.
+
+दिगंबर अवस्थेत असल्यामुळे तो दिगंबर आहे. दिगंबर म्हणजे निरंकार, बंधनमुक्त.
+
+असे हे दत्त प्रभु या ब्रह्मांडात सप्तर्षी स्वरूप घेऊन अवतीर्ण झाले आहेत. हे दिव्य सात अवतार म्हणजे स्वयं श्री दत्त गुरु, कृपाळू व करुणामयी आणि दत्तांचे प्रथम अवतार, श्रीपाद श्रीवल्लभ, त्यानंतर नरसिंह सरस्वती, तसेच गजानन महाराज, स्वामी समर्थ महाराज, साईनाथ महाराज आणि सद्गुरु शंकर महाराज.
+
+या सप्तशी॔ स्वरुपांपैकी गजानन महाराज, स्वामी समर्थ महाराज, साईनाथ महाराज आणि शंकर महाराज हे अवलिया स्वरुप भगवंत आहेत.
+
+हे स्वरुप का अवलिया आहेत? कारण ते अयोनी प्रकट झाले आहेत. अयोनी प्रकट झाले आहेत हे म्हणणं सोप्प आहे पण त्या मागचं महात्म्य इतकं मोठं आहे.
+
+वासना रहित जन्म असल्यामुळे षडरिपु विरहित हे प्रत्येक चैतन्य आहे. आपला सगळ्यांचा जन्म वासनेतला, योनीतला आहे. परंतु ही भगवंत अयोनी प्रकट झाले आहेत, त्यांचा वासना रहित जन्म आहे आणि म्हणुन षडरिपु विरहित हे चैतन्य आहे.
+
+आणि जिथे षडरिपु विरहित चैतन्य असतं तिथे पंचमहाभूतांवर आपोआप वर्चस्व प्राप्त होतं. या सृष्टीची निर्मिती पंचमहाभूतांपासून झाली आहे. मग सजीव असो किंवा निर्जीव असो, प्रत्येकाची निर्मितीच पंचमहाभूतांपासून झाली आहे.
+
+या पंचमहाभूतांवर या अवलियांचं वर्चस्व, आधिपत्य आहे. म्हणुन, अशक्य ते शक्य फक्त अवलियाच करू शकतात, भगवंत ही नाही करू शकत.
+
+भगवंताला एक चौकट आहे. या चौकटीच्या बाहेर भगवंत कर्म करू शकत नाहीत. मात्र अवलिया कुठल्याही चौकटीत बसत नाहीत.
+
+आणि म्हणुन या अवलियांच्या डिक्शनरी मध्ये ईमपॉसिबल शब्द नाहिये. There is not a single word that indicates impossible is in my dictionary because "I am possible".
+
+आणि म्हणुन अशक्य ते शक्य करतील स्वामी! आणि हे सर्व अवलिया स्वरुप भगवंत.`
+    },
+    {
+      id: 18,
+      image: "blog/eighteen.jpg",
+      category: "Spiritual Guidance",
+      date: "18/03/2026",
+      title: "आपला भक्तिभाव शुद्ध कसा होईल आणि आपल्याला खरं समाधान कसं मिळेल?",
+      author: "MBSM Trust",
+      content: `आपला भक्तिभाव शुद्ध कसा होईल आणि आपल्याला खरं समाधान कसं मिळेल?
+
+आज जर आपण पाहिलं तर एकही मंदिर, मस्जिद, चर्च, गिरिजाघर, कुठेही जा, गर्दीच गर्दी दिसते. कारण अशांतता, अस्वस्थता इतकी वाढली आहे की समाधान कशातच मिळत नाही.
+
+कितीही दिलं भगवंताने तरीही आपण अतृप्तच असतो. ज्यांच्या कटी लंगोट, काखेत झोळी आणि संगे चार श्वान आहेत त्यांना अवधूत चिंतन म्हंटलय. जो स्वयं दाता आहे, ज्याच्या नामातच दातृत्व सामावलं आहे, तो दत्त आहे. तो केवळ देण्याचं काम करतो. कधी घेत काही नाही.
+
+फक्त आपला भाव शुद्ध पाहिजे. मग, या कलियुगात तो शुद्ध भाव कसा निर्माण होतो? या अस्थिरतेमध्ये आपल्या मनाला स्थिरता कशी प्राप्त होते? या असमाधानी चैतन्याला खरं समाधान कसं प्राप्त होतं?
+
+हे सगळं भगवंताच्या नाम-जपाने प्राप्त होतं. या नाम-जपाची नेमकी महती काय आहे हे आपण जाणून घेऊ या.
+
+नाम शब्दाची जर आपण फोड केली तर त्यामध्ये "मन" सामावलं आहे. मग आपल्याला फक्त इतकच करायचं आहे की मनात "नाम" स्थानापन्न करायचं आहे.
+
+हे वाटतं तितकं सोपं नाही आणि वाटतं तितकं अवघड पण नाही. ती एकरूपता झाली पाहिजे नामाशी. आणि ती तेव्हाच होते जेव्हा मनात नाम स्थानापन्न होतं.
+
+ज्या चैतन्याचं मन आणि नाम एकरूप झालं त्या प्रत्येक चैतन्याला ती अनुभुती, ते सुख आणि ते समाधान मिळाल्या शिवाय राहत नाही.
+
+आणि ते एकरूप नसेल जरी झालं तर वातावरणात जी चमत्कारिक शांतता निर्माण होते ती तो प्रत्येक नाम-जप करणारा किंवा ऐकणारा व्यक्ति अनुभवतोच.
+
+त्या दिव्य नाम-जपाच्या ध्वनी-लहरींनी वातावरण देखील शुद्ध होऊन जातं. नाम-जप आपल्या मनातली आणि वातावरणातली सगळी अशुद्धी आणि नकारात्मकता शोषून घेतं.
+
+इतकी ताकत, इतकं सामर्थ्य नाम-जपात असतं. त्या सद्गुरुंच्या नाम-जपातूनच खरी तृप्तता, संतुष्टता, समाधान, स्थिरता आपल्याला प्राप्त होते.`
+    },
+    {
+      id: 19,
+      image: "blog/nineteen.jpg",
+      category: "Spiritual Guidance",
+      date: "18/03/2026",
+      title: "आनंदाचा अडथळा, \"अहंकार\"",
+      author: "MBSM Trust",
+      content: `आनंदाचा अडथळा, "अहंकार"
+
+आजच्या या जगामध्ये प्रत्येक चैतन्याला आपल्या ज्ञनाचा, आपल्या बुद्धीचा, आपल्या प्रत्येक कर्माचा इतका अहंकार, अभिमान आहे की, ज्याप्रमाणे एका बैलगाडी खाली कुत्रा चालतो आणि ती बैलगाडी थांबली की तो कुत्रा अंग झटकत बाहेर येतो आणि असं दर्शवत असतो की जणू सगळं ओझं मीच ओढलं. पण खरं असं नसतं. ओझं ओढणारा तो बैल असतो. मोठेपण मात्र कुत्रा घेत असतो.
+
+आपल्या दैनंदिन जीवनात आपण देखील असच काहीसं करत असतो. म्हणजे कर्म कोणीतरी दुसरं करत असतं पण आपल्यालाच त्या कर्माचं महत्व, फळ, श्रेय मिळालं पाहिजे अशा वृत्ताने आपण आपलं प्रत्येक शब्द बोलण्याचा आणि प्रत्येक कर्म करण्याचा प्रयत्न करतो.
+
+आज या कलियुगामध्ये सगळीकडे अस्वस्थता आहे, अशांतता आहे. प्रत्येकाला सुख, शांती, समाधान हवं आहे. पण या समाधान, सुख आणि शांतीच्या अगोदर "अ" लागलेला आहे. हा "अ" म्हणजे अहंकाराचा, अभिमानाचा "अ".
+
+आपण जेव्हा भगवंताच्या दरबारात असतो, जेव्हा आपण त्याच्या चरणी नतमस्तक होत असतो तेव्हा आपण आपल्या या अहंकाराची पादत्राणे बाहेर ठेवली पाहिजेत.
+
+मंदिराच्या गर्भगृहात जाण्याआधी आपण नेहमी आपल्या पायातली वाहने, चपला बाहेर काढतो मात्र या अंतःकरणात असलेले अहंकाररुपी, अभिमानरुपी चपला आपण आपल्या बरोबर घेऊन जातो.
+
+आणि मग आपण त्या भगवंताच्या चरणी नतमस्तक होण्याचं नाटक करतो. तेव्हा भगवंत देखील आपल्याला आशिर्वाद देण्याचं नाटकच करतो.
+
+दैवाने दिलं आणि कर्माने घालवलं अशी आपली परिस्थिती आहे. देवाने, भगवंताने आपल्याला भरपूर दिलं पण आपल्या कर्माने आपण ते गमावून बसलो. म्हणुन आपण कर्मदरिद्री ठरतो.`
+    },
+    {
+      id: 20,
+      image: "blog/twenty.jpg",
+      category: "Spiritual Guidance",
+      date: "18/03/2026",
+      title: "MBSM Hanuman Chalisa Pathan & Bhajan Sandhya: Intent & Effect",
+      author: "MBSM Trust",
+      content: `MBSM Hanuman Chalisa Pathan & Bhajan Sandhya: Intent & Effect
+
+Every year, Mangal Bhakt Seva Mandal (MBSM) devotedly carries out the sacred Hanuman Chalisa Pathan & Bhajan Sandhya for 41 continuous days until Hanuman Jayanti. What began as a spiritual initiative 28 years ago under the divine guidance and instructions of Sadguru Shankar Maharaj to our Guru, Shree Vishweshwar Swami Maharaj (Bhaau) has today blossomed into a special annual tradition that countless devotees await with eagerness and devotion.
+
+This divine event was first initiated by MBSM in Ahilyanagar with the noble intent of spreading greater awareness about Sanatan Dharma and offering people a serene pause from worldly stress, worries and responsibilities. For two hours every evening, from 8:30 PM to 10:30 PM, this vibrant and soothing event engrosses devotees in the collective chanting of the Hanuman Chalisa and many soul-stirring Bhajans, crafting an experience that can only be described as divya and aloukik.
+
+A remarkable aspect of this Bhajan Sandhya is its purity and sincerity. No recordings are used here. Unlike many such events, it is not a usual orchestra arranged for musical pleasure and entertainment. And MBSM ensures that it also never becomes one. Every devotional song and Bhajan is delivered live by the melodious singing sevekaris (volunteers) of MBSM. The accompanying expert musicians are also arranged by the MBSM itself. The singers and instrumentalists complement each other beautifully, performing their seva flawlessly and harmoniously. Many singing volunteers have been steadfastly offering seva in this Hanuman Chalisa Pathan and Bhajan Sandhya and with tough practice, devotion, willingness and efforts.
+
+This event is carried out in collaboration with 40 different mandals and individuals. Each of them is personally chosen, selected, and approved by Bhaau himself. All arrangements are made collaboratively, reflecting unity in devotion and collective efforts to please God and serve society. The concluding, 41st Hanuman Chalisa Pathan and Bhajan Sandhya is organized by Mangal Bhakt Seva Mandal (MBSM) itself at the MBSM Math, making the conclusion of this 41-day journey even more fulfilling. Pleasant.
+
+Bhaau remains physically present every single day of this 41-day event. Not only does he guide, oversee, and bless the gathering, but he also contributes by performing the Hanuman Chalisa and several bhajans during the Bhajan Sandhya in his broad voice, holding the softness of devotion and compassion. He often says that Lord Hanuman and Shankar Maharaj themselves remain present and bless the attendees during this Hanuman Chalisa Pathan and Bhajan Sandhya. According to him, anyone who gets the opportunity to attend this grand satsang is himself invited and graced by God. Such a devotee is indeed truly fortunate.
+
+The seating arrangements are thoughtfully made in such a way that every devotee can sit comfortably, no matter how congested the location is, and relish each Bhajan peacefully and delightfully. A large crowd of devotee assembles daily, not just to attend this event, but to engage, recite along, reflect, surrender, soak in the positive energy of the atmosphere and get drenched in the colours of devotion.
+
+What makes this initiative even more commendable is that it is conducted completely voluntarily and free of cost by MBSM along with the collaborating mandals and individuals. It is one of the most challenging sevas and initiatives undertaken by MBSM. Because each member of the MBSM family takes out time from their busy daily routine and strives to make this grand celebration of devotion a success with systematic planning, tireless practice, and smooth execution. Yet, it is executed year after year with the same commitment and reverence.
+
+The Hanuman Chalisa Pathan & Bhajan Sandhya is not just another program. It is a spiritual treat too expensive to miss. It is where every vibration of the music transmits healing. Every pure heart feels the grace of the divine. And every spirit returns home lighter, calmer and happier, leaving behind the baggage of their burdens and carrying back a unique sense of joy and peace that lasts for many days and months.`
     }
   ];
 

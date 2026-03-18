@@ -123,6 +123,69 @@ const BlogInner = () => {
       description:
         "William Shakespeare once asked, “What’s in a name?” Well, only the disciples and devotees of our Guru, Shree Vishweshwar Swami Maharaj (Bhaau), know what a name can actually hold.",
       author: "MBSM Trust"
+    },
+    {
+      id: 14,
+      image: "blog/fourteen.jpg",
+      category: "Spiritual Guidance",
+      date: "18/03/2026",
+      title: "मानव जन्म: मुक्तीचा मार्ग",
+      description: "या अवघ्या ब्रम्हांडामध्ये एकूण ८४ लाख योनी आहेत. ८४ लाख योनींमध्ये मानव योनी ही सर्वात विशेष आणि सर्वोत्तम योनी आहे.",
+      author: "MBSM Trust"
+    },
+    {
+      id: 15,
+      image: "blog/fifteen.jpg",
+      category: "Spiritual Guidance",
+      date: "18/03/2026",
+      title: "जो खुदको जानता हैं, वहीं मुझे पहचानता हैं|",
+      description: "श्री दत्तप्रभूंच्या सप्तशी॔ स्वरुपातलं, शेवटचं, स्वरुप म्हणजे सद्गुरु शंकर महाराज. शंकर महाराज त्यांच्या भक्तांना कायम सांगतात.",
+      author: "MBSM Trust"
+    },
+    {
+      id: 16,
+      image: "blog/sixteen.jpg",
+      category: "Spiritual Guidance",
+      date: "18/03/2026",
+      title: "सद्गुरु कृपा",
+      description: "सद्गुरुंची कृपा कधीही शब्दात व्यक्त करता येत नाही. कारण अनुभवाविना ती सांगता येत नाही आणि जरी आपण सांगितलं तरी ते इतरांना मान्य होत नाही.",
+      author: "MBSM Trust"
+    },
+    {
+      id: 17,
+      image: "blog/seventeen.jpg",
+      category: "Spiritual Guidance",
+      date: "18/03/2026",
+      title: "\"अवलिया\", ज्यांच्या शब्दकोशात अशक्य असा शब्दच नाही!",
+      description: "ज्यांच्या कटी लंगोट, काखेत झोळी आणि संगे चार श्वान आहेत त्यांना अवधूत चिंतन म्हंटलय. जो स्वयं दाता आहे, ज्याच्या नामातच दातृत्व सामावलं आहे, तो दत्त आहे.",
+      author: "MBSM Trust"
+    },
+    {
+      id: 18,
+      image: "blog/eighteen.jpg",
+      category: "Spiritual Guidance",
+      date: "18/03/2026",
+      title: "आपला भक्तिभाव शुद्ध कसा होईल आणि आपल्याला खरं समाधान कसं मिळेल?",
+      description: "आज जर आपण पाहिलं तर एकही मंदिर, मस्जिद, चर्च, गिरिजाघर, कुठेही जा, गर्दीच गर्दी दिसते. कारण अशांतता, अस्वस्थता इतकी वाढली आहे की समाधान कशातच मिळत नाही.",
+      author: "MBSM Trust"
+    },
+    {
+      id: 19,
+      image: "blog/nineteen.jpg",
+      category: "Spiritual Guidance",
+      date: "18/03/2026",
+      title: "आनंदाचा अडथळा, \"अहंकार\"",
+      description: "आजच्या या जगामध्ये प्रत्येक चैतन्याला आपल्या ज्ञनाचा, आपल्या बुद्धीचा, आपल्या प्रत्येक कर्माचा इतका अहंकार, अभिमान आहे.",
+      author: "MBSM Trust"
+    },
+    {
+      id: 20,
+      image: "blog/twenty.jpg",
+      category: "Spiritual Guidance",
+      date: "18/03/2026",
+      title: "MBSM Hanuman Chalisa Pathan & Bhajan Sandhya: Intent & Effect",
+      description: "Every year, Mangal Bhakt Seva Mandal (MBSM) devotedly carries out the sacred Hanuman Chalisa Pathan & Bhajan Sandhya for 41 continuous days until Hanuman Jayanti.",
+      author: "MBSM Trust"
     }
   ];
 

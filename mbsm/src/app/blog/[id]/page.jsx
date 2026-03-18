@@ -76,6 +76,41 @@ export async function generateMetadata({ params }) {
       id: 13,
       title: "What's In a Name? Faith, Peace & Power!",
       description: "William Shakespeare once asked, “What’s in a name?” For the disciples of Shree Vishweshwar Swami Maharaj, this name is a powerful support and source of peace and miracles."
+    },
+    {
+      id: 14,
+      title: "मानव जन्म: मुक्तीचा मार्ग",
+      description: "या अवघ्या ब्रम्हांडामध्ये एकूण ८४ लाख योनी आहेत. ८४ लाख योनींमध्ये मानव योनी ही सर्वात विशेष आणि सर्वोत्तम योनी आहे."
+    },
+    {
+      id: 15,
+      title: "जो खुदको जानता हैं, वहीं मुझे पहचानता हैं|",
+      description: "श्री दत्तप्रभूंच्या सप्तशी॔ स्वरुपातलं, शेवटचं, स्वरुप म्हणजे सद्गुरु शंकर महाराज. शंकर महाराज त्यांच्या भक्तांना कायम सांगतात."
+    },
+    {
+      id: 16,
+      title: "सद्गुरु कृपा",
+      description: "सद्गुरुंची कृपा कधीही शब्दात व्यक्त करता येत नाही. कारण अनुभवाविना ती सांगता येत नाही आणि जरी आपण सांगितलं तरी ते इतरांना मान्य होत नाही."
+    },
+    {
+      id: 17,
+      title: "\"अवलिया\", ज्यांच्या शब्दकोशात अशक्य असा शब्दच नाही!",
+      description: "ज्यांच्या कटी लंगोट, काखेत झोळी आणि संगे चार श्वान आहेत त्यांना अवधूत चिंतन म्हंटलय. जो स्वयं दाता आहे, ज्याच्या नामातच दातृत्व सामावलं आहे, तो दत्त आहे."
+    },
+    {
+      id: 18,
+      title: "आपला भक्तिभाव शुद्ध कसा होईल आणि आपल्याला खरं समाधान कसं मिळेल?",
+      description: "आज जर आपण पाहिलं तर एकही मंदिर, मस्जिद, चर्च, गिरिजाघर, कुठेही जा, गर्दीच गर्दी दिसते. कारण अशांतता, अस्वस्थता इतकी वाढली आहे की समाधान कशातच मिळत नाही."
+    },
+    {
+      id: 19,
+      title: "आनंदाचा अडथळा, \"अहंकार\"",
+      description: "आजच्या या जगामध्ये प्रत्येक चैतन्याला आपल्या ज्ञनाचा, आपल्या बुद्धीचा, आपल्या प्रत्येक कर्माचा इतका अहंकार, अभिमान आहे."
+    },
+    {
+      id: 20,
+      title: "MBSM Hanuman Chalisa Pathan & Bhajan Sandhya: Intent & Effect",
+      description: "Every year, Mangal Bhakt Seva Mandal (MBSM) devotedly carries out the sacred Hanuman Chalisa Pathan & Bhajan Sandhya for 41 continuous days until Hanuman Jayanti."
     }
   ];
 
