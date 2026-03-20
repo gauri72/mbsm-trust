@@ -313,6 +313,29 @@ The seating arrangements are thoughtfully made in such a way that every devotee 
 What makes this initiative even more commendable is that it is conducted completely voluntarily and free of cost by MBSM along with the collaborating mandals and individuals. It is one of the most challenging sevas and initiatives undertaken by MBSM. Because each member of the MBSM family takes out time from their busy daily routine and strives to make this grand celebration of devotion a success with systematic planning, tireless practice, and smooth execution. Yet, it is executed year after year with the same commitment and reverence.
 
 The Hanuman Chalisa Pathan & Bhajan Sandhya is not just another program. It is a spiritual treat too expensive to miss. It is where every vibration of the music transmits healing. Every pure heart feels the grace of the divine. And every spirit returns home lighter, calmer and happier, leaving behind the baggage of their burdens and carrying back a unique sense of joy and peace that lasts for many days and months.`
+    },
+    {
+      id: 21,
+      image: "blog/twenty-one.jpg",
+      category: "Spiritual Guidance",
+      date: "18/03/226",
+      title: "आपल्याला आपल्या कर्माचं मनोवांछित फळ कसं प्राप्त होईल?",
+      author: "MBSM Trust",
+      content: `आपल्याला आपल्या कर्माचं मनोवांछित फळ कसं प्राप्त होईल?
+
+आज सगळीकडे अस्थिरता, अशांतता, अस्वस्थता, असमाधान आहे. आपण प्रत्येक श्वास या सुख-शांती आणि समाधानाच्या शोधार्थ खर्च करतो. मात्र हाती काहीच गवसत नाही. कारण आपला भाव शुद्ध नाही. आपण आपला प्रत्येक श्वास हा सुख-शांती आणि समाधानाच्या शोधार्थ खर्च करतो. पण हा प्रत्येक श्वास ब्रह्मांडातील षड्रिपूंपैकी कुठल्या ना कुठल्या एका रिपूच्या अधिपत्याखाली खर्च होतो.
+
+मग कुठे काम, क्रोध, लोभ, मोह, मद, मत्सर अशा षड्रिपूंपैकी कुठल्या न कुठल्या रिपूच्या अधिपत्याखाली आपलं प्रत्येक कर्म घडतं असतं. आणि म्हणून आपल्या प्रत्येक कर्माचं फळ आपल्याला मनासारखं प्राप्त होत नाही.
+
+जोपर्यंत विशुद्ध भाव, म्हणजेच शुद्ध भावाने आपले कर्म घडत नाहींत तोपर्यंत ज्या देहाचा आपल्याला अहंकार, अभिमान आहे त्या देहातल्या या चैतन्याची जाणीव आपल्याला होत नाही. आणि जेव्हा ती जाणीव होते तेव्हा वेळ निघून गेलेली असते.
+
+आपल्या संसारामध्ये अनेक घटना घटत असतात, घटना घडून जातात आणि घटना घडून गेल्यावर आपल्याला त्याची जाणीव होते, आपल्याला त्याचं भान येतं परंतु आपण तेव्हा काहीही करू शकत नाही. कारण काहीही झालं तरी आपल्याला वर्तमानातच जगायचंय, भूतकाळात जाऊ शकत नाही, झालेल्या चुका दुरुस्त करू शकत नाही आणि भविष्यकाळात डोकावून पाहू शकत नाही.
+
+म्हणूनच आपलं प्रत्येक कर्म जोपर्यंत शुद्ध भावाने होत नाही, आपलं अंतर्मन जागं होऊन, या चैतन्याची जाणीव होऊन जोपर्यंत वाणीतून योग्य शब्द बाहेर पडत नाहीत, देहाच्या माध्यामातून योग्य कर्म घडत नाहींत तोपर्यंत मनोवांछित फळ प्राप्त होत नाही.
+
+आणि हा शुद्ध भाव भगवंताच्या भजनाचे गायन व श्रवणाने आणि नाम-जपाने प्राप्त होतो.
+
+जे मंगल भक्त सेवा मंडळ "हनुमान चालीसा पठण व भजन संध्या" या सेवेच्या माध्यामातून दर वर्षी हनुमान जयंती पर्यंत ४१ दिवस अविरत गेल्या २८ वर्षांपासून अहिल्यानगर शहराच्याच्या रहिवाशांसाठी श्रद्धा, भक्तिभाव आणि समर्पणाने राबवत आहे.`
     }
   ];
 

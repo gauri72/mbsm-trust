@@ -111,6 +111,11 @@ export async function generateMetadata({ params }) {
       id: 20,
       title: "MBSM Hanuman Chalisa Pathan & Bhajan Sandhya: Intent & Effect",
       description: "Every year, Mangal Bhakt Seva Mandal (MBSM) devotedly carries out the sacred Hanuman Chalisa Pathan & Bhajan Sandhya for 41 continuous days until Hanuman Jayanti."
+    },
+    {
+      id: 21,
+      title: "आपल्याला आपल्या कर्माचं मनोवांछित फळ कसं प्राप्त होईल?",
+      description: "आज सगळीकडे अस्थिरता, अशांतता, अस्वस्थता, असमाधान आहे. आपण प्रत्येक श्वास या सुख-शांती आणि समाधानाच्या शोधार्थ खर्च करतो."
     }
   ];
 
