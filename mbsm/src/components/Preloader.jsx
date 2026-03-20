@@ -12,7 +12,7 @@ const Preloader = () => {
     <>
       {active ? (
         <div className='preloader'>
-          <img src='/assets/images/preloader-logo.png' alt='MBSM Trust Logo' />
+          <img src='/assets/images/preloader-logo.png?v=20260320' alt='MBSM Trust Logo' />
           <p>MBSM Trust</p>
         </div>
       ) : (
