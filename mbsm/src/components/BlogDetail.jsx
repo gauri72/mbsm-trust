@@ -415,9 +415,13 @@ The Hanuman Chalisa Pathan & Bhajan Sandhya is not just another program. It is a
               <div className='blog__single-content'>
                 <h4>{blog.title}</h4>
                 <div className='blog-content-text'>
-                  {blog.content.split('\n\n').map((paragraph, index) => (
-                    <p key={index}>{paragraph}</p>
-                  ))}
+                  {blog.id === 22 ? (
+                    <div dangerouslySetInnerHTML={{ __html: blog.content.replace(/\n\n/g, '</p><p>').replace(/^/, '<p>').replace(/$/, '</p>') }} />
+                  ) : (
+                    blog.content.split('\n\n').map((paragraph, index) => (
+                      <p key={index}>{paragraph}</p>
+                    ))
+                  )}
                 </div>
               </div>
               <div className='blog__single-cta'>
