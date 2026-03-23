@@ -342,9 +342,7 @@ The Hanuman Chalisa Pathan & Bhajan Sandhya is not just another program. It is a
       date: "22/03/2026",
       title: "जीवनात शुद्ध भावाची गरज",
       author: "MBSM Trust",
-      content: `जीवनात शुद्ध भावाची गरज
-
-पूर्वीच्या ब्लॉगची लिंक: https://mbsmtrust.org/blog/21
+      content: `पूर्वीच्या ब्लॉगची लिंक: <a href="/blog/21" style="color: #007bff; text-decoration: underline;">https://mbsmtrust.org/blog/21</a>
 
 पूर्वीच्या ब्लॉग अनुसार:
 
