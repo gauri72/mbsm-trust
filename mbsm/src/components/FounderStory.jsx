@@ -2,8 +2,6 @@
 import { useState } from "react";
 
 const FounderStory = () => {
-  const [currentPage, setCurrentPage] = useState(0);
-
   const sections = [
     {
       title: "The Divine Selection & Early Life",
@@ -155,16 +153,12 @@ const FounderStory = () => {
     }
   ];
 
+  const [active, setActive] = useState(0);
+  const current = sections[active];
 
-  const handlePrevPage = () => {
-    if (currentPage > 0) {
-      setCurrentPage(currentPage - 1);
-    }
-  };
-
-  const handleNextPage = () => {
-    if (currentPage < sections.length - 1) {
-      setCurrentPage(currentPage + 1);
+  const goTo = (index) => {
+    if (index >= 0 && index < sections.length) {
+      setActive(index);
     }
   };
 
@@ -188,67 +182,107 @@ const FounderStory = () => {
             </div>
           </div>
         </div>
-        <div className='row'>
-          <div className='col-12'>
-            <div className='founder-story__card-wrapper' data-aos='fade-up' data-aos-duration={1000} data-aos-delay={100}>
-              <div className='founder-story__card'>
-                <div className='founder-story__card-header'>
-                  <h3>{sections[currentPage].title}</h3>
-                  <div className='founder-story__page-indicator'>
-                    Page {currentPage + 1} of {sections.length}
-                  </div>
+
+        <div className='founder-reader'>
+          <div className='row g-4 g-lg-4'>
+            {/* Chapter index */}
+            <div className='col-lg-4'>
+              <aside
+                className='founder-reader__index'
+                data-aos='fade-right'
+                data-aos-duration={900}
+              >
+                <div className='founder-reader__index-head'>
+                  <span className='founder-reader__index-eyebrow'>
+                    <i className='fa-solid fa-book-open' />
+                    The Chapters
+                  </span>
+                  <span className='founder-reader__index-count'>
+                    01 &ndash; {String(sections.length).padStart(2, '0')}
+                  </span>
                 </div>
-                <div className='founder-story__card-body'>
-                  <div className='founder-story__image-wrapper'>
-                    <img
-                      src={sections[currentPage].image}
-                      alt={sections[currentPage].title}
-                      className='founder-story__image'
-                    />
-                  </div>
-                  <div className='founder-story__content'>
-                    {sections[currentPage].content.map((paragraph, index) => (
-                      <p key={index}>{paragraph}</p>
-                    ))}
-                  </div>
+                <ul className='founder-reader__list'>
+                  {sections.map((section, index) => (
+                    <li key={index}>
+                      <button
+                        type='button'
+                        className={`founder-reader__chapter ${active === index ? 'is-active' : ''}`}
+                        onClick={() => goTo(index)}
+                        aria-current={active === index ? 'true' : undefined}
+                      >
+                        <span className='founder-reader__chapter-num'>
+                          {String(index + 1).padStart(2, '0')}
+                        </span>
+                        <span className='founder-reader__chapter-title'>
+                          {section.title}
+                        </span>
+                        <i className='fa-solid fa-chevron-right founder-reader__chapter-arrow' />
+                      </button>
+                    </li>
+                  ))}
+                </ul>
+              </aside>
+            </div>
+
+            {/* Reading pane */}
+            <div className='col-lg-8'>
+              <article
+                key={active}
+                className='founder-reader__content'
+              >
+                <div className='founder-reader__content-head'>
+                  <span className='founder-reader__kicker'>
+                    <i className='fa-solid fa-om' />
+                    Chapter {active + 1} of {sections.length}
+                  </span>
+                  <h3 className='founder-reader__title'>{current.title}</h3>
                 </div>
-                <div className='founder-story__card-footer'>
+
+                <div className='founder-reader__body'>
+                  <figure className='founder-reader__media'>
+                    <div className='founder-reader__media-frame'>
+                      <img src={current.image} alt={current.title} />
+                    </div>
+                    <span className='founder-reader__seal' aria-hidden='true'>
+                      <i className='fa-solid fa-spa' />
+                    </span>
+                  </figure>
+
+                  {current.content.map((paragraph, i) => (
+                    <p key={i}>{paragraph}</p>
+                  ))}
+                </div>
+
+                <div className='founder-reader__nav'>
                   <button
                     type='button'
-                    className='founder-story__nav-btn'
-                    onClick={handlePrevPage}
-                    disabled={currentPage === 0}
-                    aria-label='Previous page'
+                    className='founder-reader__nav-btn'
+                    onClick={() => goTo(active - 1)}
+                    disabled={active === 0}
                   >
                     <i className='fa-solid fa-chevron-left' />
                     <span>Previous</span>
                   </button>
-                  <div className='founder-story__dots'>
-                    {sections.map((_, index) => (
-                      <span
-                        key={index}
-                        className={`founder-story__dot ${currentPage === index ? 'active' : ''}`}
-                        onClick={() => setCurrentPage(index)}
-                        aria-label={`Go to page ${index + 1}`}
-                      />
-                    ))}
-                  </div>
+                  <span className='founder-reader__nav-progress'>
+                    {String(active + 1).padStart(2, '0')}
+                    <em> / {String(sections.length).padStart(2, '0')}</em>
+                  </span>
                   <button
                     type='button'
-                    className='founder-story__nav-btn'
-                    onClick={handleNextPage}
-                    disabled={currentPage === sections.length - 1}
-                    aria-label='Next page'
+                    className='founder-reader__nav-btn'
+                    onClick={() => goTo(active + 1)}
+                    disabled={active === sections.length - 1}
                   >
                     <span>Next</span>
                     <i className='fa-solid fa-chevron-right' />
                   </button>
                 </div>
-              </div>
+              </article>
             </div>
           </div>
         </div>
       </div>
+
       <div className='shape d-none d-lg-block'>
         <img src='assets/images/shape.png' alt='Image_inner' />
       </div>
