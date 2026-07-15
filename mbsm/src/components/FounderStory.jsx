@@ -185,13 +185,9 @@ const FounderStory = () => {
 
         <div className='founder-reader'>
           <div className='row g-4 g-lg-4'>
-            {/* Chapter index */}
-            <div className='col-lg-4'>
-              <aside
-                className='founder-reader__index'
-                data-aos='fade-right'
-                data-aos-duration={900}
-              >
+            {/* Chapter index (hidden on mobile & tablet) */}
+            <div className='col-lg-4 founder-reader__index-col'>
+              <aside className='founder-reader__index'>
                 <div className='founder-reader__index-head'>
                   <span className='founder-reader__index-eyebrow'>
                     <i className='fa-solid fa-book-open' />

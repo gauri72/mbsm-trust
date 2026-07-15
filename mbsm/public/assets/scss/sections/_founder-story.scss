@@ -62,20 +62,20 @@ $fs-ink: #122f2a;
   }
 
   /* ---------- Chapter index (sidebar) ---------- */
+  // Hidden on mobile & tablet — navigation there uses the Previous/Next buttons
+  .founder-reader__index-col {
+    @media only screen and (max-width: 991px) {
+      display: none;
+    }
+  }
+
   .founder-reader__index {
-    position: sticky;
-    top: 100px;
+    height: 100%;
     background: linear-gradient(180deg, #ffffff 0%, #fffaf5 100%);
     border: 1px solid rgba($fs-red, 0.12);
     border-radius: 22px;
     padding: 22px;
     box-shadow: 0 20px 46px -22px rgba($fs-red-deep, 0.4);
-
-    @media only screen and (max-width: 991px) {
-      position: static;
-      top: auto;
-      padding: 18px;
-    }
   }
 
   .founder-reader__index-head {
@@ -115,45 +115,9 @@ $fs-ink: #122f2a;
     list-style: none;
     margin: 0;
     padding: 4px;
-    max-height: calc(100vh - 220px);
-    overflow-y: auto;
-
-    // Themed scrollbar
-    &::-webkit-scrollbar {
-      width: 6px;
-    }
-    &::-webkit-scrollbar-track {
-      background: rgba($fs-red, 0.06);
-      border-radius: 10px;
-    }
-    &::-webkit-scrollbar-thumb {
-      background: linear-gradient(180deg, $fs-red 0%, $fs-red-deep 100%);
-      border-radius: 10px;
-    }
-    scrollbar-width: thin;
-    scrollbar-color: $fs-red rgba($fs-red, 0.06);
 
     li + li {
       margin-top: 6px;
-    }
-
-    @media only screen and (max-width: 991px) {
-      display: flex;
-      flex-wrap: nowrap;
-      gap: 10px;
-      max-height: none;
-      overflow-x: auto;
-      overflow-y: hidden;
-      padding: 4px 4px 12px;
-      scroll-snap-type: x mandatory;
-
-      li + li {
-        margin-top: 0;
-      }
-
-      li {
-        scroll-snap-align: start;
-      }
     }
   }
 
@@ -237,23 +201,6 @@ $fs-ink: #122f2a;
         color: $fs-gold;
         opacity: 1;
         transform: translateX(0);
-      }
-    }
-
-    @media only screen and (max-width: 991px) {
-      flex-shrink: 0;
-      width: auto;
-      max-width: 260px;
-
-      .founder-reader__chapter-title {
-        white-space: nowrap;
-        overflow: hidden;
-        text-overflow: ellipsis;
-        max-width: 170px;
-      }
-
-      .founder-reader__chapter-arrow {
-        display: none;
       }
     }
   }
