@@ -9046,6 +9046,12 @@ div {
   z-index: 1;
   overflow: hidden;
 }
+.blog .sub-title {
+  color: #8b1e1e;
+}
+.blog .sub-title i {
+  color: #8b1e1e;
+}
 .blog .blog__single {
   padding: 20px 20px 60px;
   background-color: var(--white);
@@ -9058,7 +9064,7 @@ div {
   z-index: 1;
 }
 .blog .blog__single:hover {
-  background-color: var(--tertiary-color);
+  background-color: #8b1e1e;
 }
 .blog .blog__single:hover .blog__single-thumb a img {
   -webkit-transform: scale(1.2) rotate(6deg);
@@ -9120,7 +9126,7 @@ div {
 }
 .blog .blog__single-thumb .tag a {
   padding: 8px 24px;
-  background-color: var(--secondary-color);
+  background-color: #8b1e1e;
   border-radius: 30px;
   color: var(--white);
 }
@@ -9167,7 +9173,7 @@ div {
 }
 .blog .blog__single-content h5 {
   font-weight: 700;
-  color: var(--secondary-color);
+  color: var(--black);
   margin-top: -8px;
 }
 .blog .blog__single-cta {
@@ -9176,7 +9182,7 @@ div {
 }
 .blog .blog__single-cta a {
   font-weight: 700;
-  color: var(--secondary-color);
+  color: var(--black);
   font-size: 18px;
   position: relative;
 }
@@ -9187,12 +9193,12 @@ div {
   inset-inline-start: 0px;
   width: 76%;
   height: 1px;
-  background-color: var(--secondary-color);
+  background-color: var(--black);
   -webkit-transition: var(--transition);
   transition: var(--transition);
 }
 .blog .blog__single-cta a i {
-  color: var(--tertiary-color);
+  color: var(--black);
   font-size: 20px;
   margin-bottom: -2px;
   -webkit-transition: var(--transition);
@@ -9262,7 +9268,7 @@ div {
 }
 .blog-main .blog__single-thumb .tag a {
   padding: 8px 24px;
-  background-color: var(--secondary-color);
+  background-color: #8b1e1e;
   color: var(--white);
 }
 .blog-main .blog__single-thumb .tag a i {
@@ -9332,7 +9338,7 @@ div {
 .blog-main .blockquote-wrapper {
   padding: 24px 24px;
   background-color: #ebebeb;
-  border-left: 5px solid var(--quaternary-color);
+  border-left: 5px solid #8b1e1e;
 }
 .blog-main .blockquote-wrapper blockquote {
   font-weight: 600;
@@ -9342,7 +9348,7 @@ div {
 .blog-main .blockquote-wrapper p {
   margin-top: 12px !important;
   font-weight: 700;
-  color: var(--quaternary-color);
+  color: #8b1e1e;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -9357,7 +9363,7 @@ div {
 .blog-main .blockquote-wrapper p .line {
   width: 26px;
   height: 1px;
-  background-color: var(--quaternary-color);
+  background-color: #8b1e1e;
 }
 .blog-main .details-footer {
   display: -webkit-box;

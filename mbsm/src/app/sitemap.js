@@ -21,7 +21,7 @@ export default function sitemap() {
   }));
 
   // Blog detail pages (IDs 1-45)
-  const blogIds = Array.from({ length: 45 }, (_, i) => i + 1);
+  const blogIds = Array.from({ length: 51 }, (_, i) => i + 1);
 
   const blogEntries = blogIds.map(id => ({
     url: `${BASE_URL}/blog/${id}`,
