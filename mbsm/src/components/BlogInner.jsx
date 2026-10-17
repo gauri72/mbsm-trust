@@ -1,4 +1,5 @@
 "use client";
+import { useState, useMemo } from "react";
 import Link from "next/link";
 
 const BlogInner = () => {
@@ -7,7 +8,7 @@ const BlogInner = () => {
     {
       id: 1,
       image: "blog/one.jpg",
-      category: "Spiritual Journey",
+      category: "Pravachan",
       date: "08/01/2026",
       title: "Where a Never-Ending Rainfall of Blessings Flows: The Shankar Maharaj Math in Ahilyanagar",
       description: "Thursday is an ordinary day for most people. People are engrossed in their daily chores and duties, eagerly waiting for the weekend. But at the Shankar Maharaj Math (pilgrimage) located in the MIDC locality of Ahilyanagar, Maharashtra, \"Thursday\" carries a different meaning. It is a special day soaked in devotion, peace and quiet miracles.",
@@ -16,7 +17,7 @@ const BlogInner = () => {
     {
       id: 2,
       image: "blog/two.jpg",
-      category: "Community Service",
+      category: "Pravachan",
       date: "08/01/2026",
       title: "Come Here to Experience the True Meaning of Service, Devotion, Charity & Humanity!",
       description: "The Shankar Maharaj Math is simple and warm, but the energy, the aura it holds is deeply powerful. The Math takes care of every basic need of a devotee. From clean and well-equipped toilets for ladies and gents to tea and food arrangements, everything is taken care of with attention, affection and thoughtfulness.",
@@ -25,7 +26,7 @@ const BlogInner = () => {
     {
       id: 3,
       image: "blog/three.jpg",
-      category: "Spiritual Service",
+      category: "Pravachan",
       date: "08/01/2026",
       title: "Repairing Lives & Healing Hearts: The Thursday Gaadi Seva of Shankar Maharaj",
       description: "Yet, despite being showered with such overwhelming love and reverence by countless disciples, followers, and devotees, it is his greatness that Bhaau still humbly calls himself only a devotee and disciple of Sadguru Shankar Maharaj. His humility makes him even more great and divine.",
@@ -34,7 +35,7 @@ const BlogInner = () => {
     {
       id: 4,
       image: "blog/four.jpg",
-      category: "Community Service",
+      category: "Pravachan",
       date: "08/01/2026",
       title: "Thursday Annadan Seva: Food that Fulfills the Hunger & Nourishes the Soul",
       description: "On Thursday, alongside the Gaadi Seva, the Math carries out free Annadan Seva for all visitors throughout the entire day, continuing until the last person is served on Friday. Here, it is believed that \"Annadan Shreshtha Daan!,\" meaning, feeding others is the greatest charity.",
@@ -43,7 +44,7 @@ const BlogInner = () => {
     {
       id: 5,
       image: "blog/five.jpg",
-      category: "Spiritual Guidance",
+      category: "Pravachan",
       date: "08/01/2026",
       title: "\"कर्म\" हाच कलियुगाचा धर्म",
       description: "श्री विश्वेश्वर स्वामी महाराज ( श्री राजाभाऊ कोठारी) त्यांच्या गुरुवार विशेष प्रवचनात म्हणतात: बघा किती प्रश्न, किती अडचणी आपण आपल्या जीवनामध्ये निर्माण केल्या आहेत. होय! आपण निर्माण केल्या आहेत.",
@@ -52,7 +53,7 @@ const BlogInner = () => {
     {
       id: 6,
       image: "blog/six.jpg",
-      category: "Spiritual Guidance",
+      category: "Pravachan",
       date: "08/01/2026",
       title: "अहंकाराला जपत आधाराचा शोध",
       description: "श्री विश्वेश्वर स्वामी महाराज (श्री राजाभाऊ कोठारी) त्यांच्या गुरुवार विशेष प्रवचनात म्हणतात: आजच्या या कलियुगात प्रत्येक चैतन्य अतृप्त आहे. प्रत्येक चैतन्य अशांत आहे, अस्थिर आहे, आपला स्वतःवर विश्वास नाही.",
@@ -61,7 +62,7 @@ const BlogInner = () => {
     {
       id: 7,
       image: "blog/seven.jpg",
-      category: "Spiritual Guidance",
+      category: "Pravachan",
       date: "08/01/2026",
       title: "रात्र आणि दिवस: आयुष्याचं सृष्टीचक्र",
       description: "विश्वेश्वर स्वामी महाराज (श्री राजाभाऊ कोठारी) त्यांच्या गुरुवार विशेष प्रवचनात म्हणतात: या सृष्टीचक्राची निर्मिती करताना रात्र आणि दिवस एका मागे एक गुंफले गेले अगदी तसच आपल्या आयुष्यामध्ये, आपल्या संसारामध्ये, अध्यात्मामध्ये रात्र आणि दिवस आहेत.",
@@ -70,7 +71,7 @@ const BlogInner = () => {
     {
       id: 8,
       image: "blog/eight.jpg",
-      category: "Spiritual Guidance",
+      category: "Pravachan",
       date: "08/01/2026",
       title: "त्रिगुण, त्रिगुणात्मक आणि जीवनाचे शाश्वत सत्य",
       description: "श्री विश्वेश्वर स्वामी महाराज ( श्री राजाभाऊ कोठारी) त्यांच्या गुरुवार विशेष प्रवचनात म्हणतात: या सृष्टीची रचना तमस, रजस आणि सत्त्व या तीन गुणांवर झालेली आहे. दत्त महाराज त्रिगुणात्मक आहेत.",
@@ -79,7 +80,7 @@ const BlogInner = () => {
     {
       id: 9,
       image: "blog/nine.jpg",
-      category: "Spiritual Guidance",
+      category: "Pravachan",
       date: "08/01/2026",
       title: "भगवंत दरवेळी वाचवतो, पण आपण स्वतःला सुधारतो का?",
       description: "श्री विश्वेश्वर स्वामी महाराज त्यांच्या प्रवचनात म्हणतात: भगवंत खूप दयाळू आहे, मायाळू आहे, साक्षात माऊलीस्वरूप आहे. आपल्या प्रत्येक चुकीला तो पदरात घालतो, आपले अपराध पोटी घेतो.",
@@ -88,7 +89,7 @@ const BlogInner = () => {
     {
       id: 10,
       image: "blog/ten.jpg",
-      category: "Spiritual Guidance",
+      category: "Pravachan",
       date: "08/01/2026",
       title: "मानव जन्म, षडरिपू आणि गुरूचे महत्व",
       description: "आपला जन्म हा मानव योनीतला जन्म आहे. मानव योनीतला जन्म म्हणजे वासनेतला जन्म. आपण असेच प्रकट नाही झालो, आपण आपल्या आई वडिलांच्या पोटी जन्म घेतला आहे.",
@@ -97,7 +98,7 @@ const BlogInner = () => {
     {
       id: 11,
       image: "blog/eleven.jpg",
-      category: "Spiritual Guidance",
+      category: "Pravachan",
       date: "06/02/2026",
       title: "सुख, शांती आणि समाधानाची दारे कशी उघडतील?",
       description:
@@ -107,7 +108,7 @@ const BlogInner = () => {
     {
       id: 12,
       image: "blog/twelve.jpg",
-      category: "Community Service",
+      category: "Pravachan",
       date: "06/02/2026",
       title: "Food is Sacred; Wastage is Strictly Prohibited at the Annadan Seva of MBSM",
       description:
@@ -117,7 +118,7 @@ const BlogInner = () => {
     {
       id: 13,
       image: "blog/thirteen.jpg",
-      category: "Spiritual Journey",
+      category: "Pravachan",
       date: "06/02/2026",
       title: "What's In a Name? Faith, Peace & Power!",
       description:
@@ -127,7 +128,7 @@ const BlogInner = () => {
     {
       id: 14,
       image: "blog/fourteen.jpg",
-      category: "Spiritual Guidance",
+      category: "Pravachan",
       date: "18/03/2026",
       title: "मानव जन्म: मुक्तीचा मार्ग",
       description: "या अवघ्या ब्रम्हांडामध्ये एकूण ८४ लाख योनी आहेत. ८४ लाख योनींमध्ये मानव योनी ही सर्वात विशेष आणि सर्वोत्तम योनी आहे.",
@@ -136,7 +137,7 @@ const BlogInner = () => {
     {
       id: 15,
       image: "blog/fifteen.jpg",
-      category: "Spiritual Guidance",
+      category: "Pravachan",
       date: "18/03/2026",
       title: "जो खुदको जानता हैं, वहीं मुझे पहचानता हैं|",
       description: "श्री दत्तप्रभूंच्या सप्तशी॔ स्वरुपातलं, शेवटचं, स्वरुप म्हणजे सद्गुरु शंकर महाराज. शंकर महाराज त्यांच्या भक्तांना कायम सांगतात.",
@@ -145,7 +146,7 @@ const BlogInner = () => {
     {
       id: 16,
       image: "blog/sixteen.jpg",
-      category: "Spiritual Guidance",
+      category: "Pravachan",
       date: "18/03/2026",
       title: "सद्गुरु कृपा",
       description: "सद्गुरुंची कृपा कधीही शब्दात व्यक्त करता येत नाही. कारण अनुभवाविना ती सांगता येत नाही आणि जरी आपण सांगितलं तरी ते इतरांना मान्य होत नाही.",
@@ -154,7 +155,7 @@ const BlogInner = () => {
     {
       id: 17,
       image: "blog/seventeen.jpg",
-      category: "Spiritual Guidance",
+      category: "Pravachan",
       date: "18/03/2026",
       title: "\"अवलिया\", ज्यांच्या शब्दकोशात अशक्य असा शब्दच नाही!",
       description: "ज्यांच्या कटी लंगोट, काखेत झोळी आणि संगे चार श्वान आहेत त्यांना अवधूत चिंतन म्हंटलय. जो स्वयं दाता आहे, ज्याच्या नामातच दातृत्व सामावलं आहे, तो दत्त आहे.",
@@ -163,7 +164,7 @@ const BlogInner = () => {
     {
       id: 18,
       image: "blog/eighteen.jpg",
-      category: "Spiritual Guidance",
+      category: "Pravachan",
       date: "18/03/2026",
       title: "आपला भक्तिभाव शुद्ध कसा होईल आणि आपल्याला खरं समाधान कसं मिळेल?",
       description: "आज जर आपण पाहिलं तर एकही मंदिर, मस्जिद, चर्च, गिरिजाघर, कुठेही जा, गर्दीच गर्दी दिसते. कारण अशांतता, अस्वस्थता इतकी वाढली आहे की समाधान कशातच मिळत नाही.",
@@ -172,7 +173,7 @@ const BlogInner = () => {
     {
       id: 19,
       image: "blog/nineteen.jpg",
-      category: "Spiritual Guidance",
+      category: "Pravachan",
       date: "18/03/2026",
       title: "आनंदाचा अडथळा, \"अहंकार\"",
       description: "आजच्या या जगामध्ये प्रत्येक चैतन्याला आपल्या ज्ञनाचा, आपल्या बुद्धीचा, आपल्या प्रत्येक कर्माचा इतका अहंकार, अभिमान आहे.",
@@ -181,7 +182,7 @@ const BlogInner = () => {
     {
       id: 20,
       image: "blog/twenty.jpg",
-      category: "Spiritual Guidance",
+      category: "Pravachan",
       date: "18/03/2026",
       title: "MBSM Hanuman Chalisa Pathan & Bhajan Sandhya: Intent & Effect",
       description: "Every year, Mangal Bhakt Seva Mandal (MBSM) devotedly carries out the sacred Hanuman Chalisa Pathan & Bhajan Sandhya for 41 continuous days until Hanuman Jayanti.",
@@ -190,7 +191,7 @@ const BlogInner = () => {
     {
       id: 21,
       image: "blog/twenty-one.jpg",
-      category: "Spiritual Guidance",
+      category: "Pravachan",
       date: "18/03/2026",
       title: "आपल्याला आपल्या कर्माचं मनोवांछित फळ कसं प्राप्त होईल?",
       description: "आज सगळीकडे अस्थिरता, अशांतता, अस्वस्थता, असमाधान आहे. आपण प्रत्येक श्वास या सुख-शांती आणि समाधानाच्या शोधार्थ खर्च करतो.",
@@ -199,7 +200,7 @@ const BlogInner = () => {
     {
       id: 22,
       image: "blog/twenty-two.jpg",
-      category: "Spiritual Guidance",
+      category: "Pravachan",
       date: "22/03/2026",
       title: "जीवनात शुद्ध भावाची गरज",
       description: "जोपर्यंत आपण या अध्यात्मातली सर्वोच्च अशी ही तपस्या म्हणा, साधना म्हणा किंवा सेवा म्हणा, भजन आणि नाम-स्मरणात खर्या अर्थाने रममाण होत नाही, एकरूप होत नाही आणि आपला समर्पण भाव त्यामध्ये ओतला जात नाही तोपर्यंत पालथ्या घड्यावर पाणी अशी आपली अवस्था राहते.",
@@ -208,7 +209,7 @@ const BlogInner = () => {
     {
       id: 23,
       image: "blog/twenty-three.jpg",
-      category: "Spiritual Guidance",
+      category: "Pravachan",
       date: "27/03/2026",
       title: "शंकर महाराज संदेश — जीवनाचा सार",
       description: "दत्तप्रभुंच्या सप्तर्षी स्वरुपातलं शेवटचं स्वरुप म्हणजे शंकर महाराज. कल्याण करणारे शंकर महाराज. \"मैं कैलास का रहनेवाला | मेरा नाम है शंकर || दुनिया को समझाने आया | करले कुछ अपना घर ||\" (शंकर महाराज संदेश). हे महाराजांना का सांगायची वेळ आली? कारण कलियुगाचा धर्म कर्म आहे.",
@@ -217,7 +218,7 @@ const BlogInner = () => {
     {
       id: 24,
       image: "blog/twenty-four.jpg",
-      category: "Spiritual Guidance",
+      category: "Pravachan",
       date: "02/04/2026",
       title: "मारुती रायांची शिकवण आणि आपल्या कर्माप्रति एकनिष्ठता",
       description: "ज्या देशामध्ये आपण राहतोय त्याला आपण हिंदुस्तान म्हणतो. गेल्या १० वर्षांपासून या हिंदुस्तान मध्ये रामराज्य आणण्याचा संकल्प आपण मनाशी बाळगून प्रत्येक कर्म करत चाललो आहे. परंतु नुसता संकल्प धरून चालत नाही. तर तसं कर्म देखील आपल्या माध्यामातून घडणं तितकच महत्त्वाच आहे.",
@@ -226,7 +227,7 @@ const BlogInner = () => {
     {
       id: 25,
       image: "blog/twenty-five.jpg",
-      category: "Spiritual Guidance",
+      category: "Pravachan",
       date: "02/04/2026",
       title: "आपल्या कर्मांप्रति समर्पणच आपल्याला खरं सुख, शांती आणि समाधान मिळवून देऊ शकतं!",
       description: "ज्या संसारामध्ये आपण आहोत, त्या संसारातल्या प्रश्न, अडचणी आणि समस्यांचा आपण इतका बाऊ करतो, नको तितका बाऊ आपण करतो की ज्या शुल्लक गोष्टी असतात त्यांना देखील आपण डोंगरा एवढ्या मोठ्या करून ठेवतो. आणि याला कारण फक्त आणि फक्त आपली बुद्धी आहे.",
@@ -235,7 +236,7 @@ const BlogInner = () => {
     {
       id: 26,
       image: "blog/twenty-six.jpg",
-      category: "Spiritual Guidance",
+      category: "Pravachan",
       date: "02/04/2026",
       title: "कर्म, अनुभूती आणि खरा गुरु",
       description: "जीवनात जेव्हा आपली वाईट वेळ येते तेव्हा अगदी दीन, गरीबवाणा, बापडा चेहरा करून आपण भगवंताच्या समोर नतमस्तक होतो. मग व्यवहारात असेल तर समोरच्या व्यक्तीला भगवंत समजून तिथे नतमस्तक होतो आपण. आणि चूक झाली, माफ कर असं म्हणून आपण त्याचे पाय धरतो.",
@@ -244,7 +245,7 @@ const BlogInner = () => {
     {
       id: 27,
       image: "blog/twenty-seven.jpg",
-      category: "Spiritual Guidance",
+      category: "Pravachan",
       date: "07/04/2026",
       title: "अहंकार, पश्चात्ताप आणि वास्तव",
       description: "जोपर्यंत या देहामध्ये चैतन्य आहे, तोपर्यंत या देहाला अर्थ आहे. एकदा या देहातून चैतन्य बाहेर पडला, की या देहाची किंमत शून्य होते. या चैतन्यावर आपलं नियंत्रण नाही, या देहाची मालकी चैतन्यावर नाही पण या चैतन्याची मालकी देहावर आहे.",
@@ -253,7 +254,7 @@ const BlogInner = () => {
     {
       id: 28,
       image: "blog/twenty-eight.jpg",
-      category: "Spiritual Guidance",
+      category: "Pravachan",
       date: "07/04/2026",
       title: "स्तुती, मोह आणि करनी का फल",
       description: "आपल्या चूका जो आपल्या तोंडावर सांगतो ना तो आपला खरा हितचिंतक असतो, लक्षात घ्या. परंतु आपण इतके स्तुती पाठक झालो आहोत की अवतीभवती आपल्याला सगळे भाट हवे. \"अरे साहेब तुम्ही किती मोठे, तुमचं काम किती छान, तुमचं काय बघायचं, तुम्हाला कोण अडवणार!\" अशी स्तुती करणारेच लोक आपल्याला सतत हवे.",
@@ -262,7 +263,7 @@ const BlogInner = () => {
     {
       id: 29,
       image: "blog/twenty-nine.jpg",
-      category: "Spiritual Guidance",
+      category: "Pravachan",
       date: "24/04/2026",
       title: "अंतर्मनाची जाणीव",
       description: "आपल्या प्रत्येक चूक किंवा अयोग्य कर्माला समर्थन देण्याकरिता शब्दांच्या किती कोलांटी उड्या आपण दिवसभरात मारत असतो हे देखील शब्दबद्ध करता येत नाही. उठल्यापासून रात्री झोपेपर्यंत या चेहर्‍यावर इतके मुखवटे बदलत असतात सातत्याने की आपला मूळ चेहरा आपण विसरतो, अशी आपली अवस्था आहे.",
@@ -271,7 +272,7 @@ const BlogInner = () => {
     {
       id: 30,
       image: "blog/thirty.jpg",
-      category: "Spiritual Guidance",
+      category: "Pravachan",
       date: "24/04/2026",
       title: "\"जे जे होईल, ते ते पहावे, तुका म्हणे उगी राहावे.\"",
       description: "आपल्याला भूतकाळात जाता येत नाही, आपल्याला भविष्यकाळामध्ये पाऊल टाकता येत नाही. काहीही झालं तरी आपल्याला वर्तमानातच जगावं लागतं. मात्र आपली आजची परिस्थिती अशी आहे की देह आपला वर्तमानात असतो आणि मन भूतकाळ आणि भविष्यकाळ यामध्ये सातत्याने दोलायमान होत असतं.",
@@ -280,7 +281,7 @@ const BlogInner = () => {
     {
       id: 31,
       image: "blog/thirty-one.jpg",
-      category: "Spiritual Guidance",
+      category: "Pravachan",
       date: "24/04/2026",
       title: "हरिनाम, चमत्कार आणि आत्मभानाचा अखंड प्रवास",
       description: "वारी हा कलियुगामध्ये एक चमत्कार आहे. अगदी ८०, ८३ वर्षांचे ज्येष्ठ पायी चालतात. घरून पुढच्या चौकात जायचं असेल, वॉकिंग डिस्टन्स फक्त २ मिनिटाचा जरी असेल तरी घडीला किक मारली जाते आणि २ मिनिटात तो तरुण त्या स्थानी पोहोचतो.",
@@ -289,7 +290,7 @@ const BlogInner = () => {
     {
       id: 32,
       image: "blog/thirty-two.jpg",
-      category: "Spiritual Guidance",
+      category: "Pravachan",
       date: "24/04/2026",
       title: "शंकर महाराजांच्या संदेशाचा गूढ अर्थ",
       description: "\"शं\" म्हणजे कल्याण आणि \"कर\" म्हणजे करणारा. कल्याण करणारा तो शंकर आहे. मग अशा सद्गुरुंनी सहज सोप्या एका वाक्यामध्ये जीवनाचा सार सांगितला. \"मुझे वही जानता है | जो खुद को समझता है ||\" किती सोपं आहे.",
@@ -298,7 +299,7 @@ const BlogInner = () => {
     {
       id: 33,
       image: "blog/thirty-three.jpg",
-      category: "Spiritual Guidance",
+      category: "Pravachan",
       date: "24/04/2026",
       title: "अशीच आईसारखी माया शंकर महाराज आपल्या भक्तांवर करतात!",
       description: "दत्तप्रभूंचं सप्तर्शी स्वरूप या ब्रह्मांडात वास करतं. आणि या सप्तर्शी स्वरुपातलं शेवटचं स्वरूप म्हणजे सद्गुरु शंकर महाराज. \"मुझे वही जानता है | जो खुद को समझता है ||\" या कलियुगात प्रत्येक जण स्वतःला खूप चांगल्या पद्धतीने ओळखतो, असा प्रत्येकाचा गैरसमज आहे.",
@@ -307,7 +308,7 @@ const BlogInner = () => {
     {
       id: 34,
       image: "blog/thirty-four.jpg",
-      category: "Spiritual Guidance",
+      category: "Pravachan",
       date: "13/05/2026",
       title: "प्रवाहाविरुद्ध पोहण्याची कसरत Part 1",
       description:
@@ -317,7 +318,7 @@ const BlogInner = () => {
     {
       id: 35,
       image: "blog/thirty-five.jpg",
-      category: "Spiritual Guidance",
+      category: "Pravachan",
       date: "13/05/2026",
       title: "प्रवाहाविरुद्ध पोहण्याची कसरत Part 2",
       description:
@@ -327,7 +328,7 @@ const BlogInner = () => {
     {
       id: 36,
       image: "blog/thirty-six.jpg",
-      category: "Spiritual Guidance",
+      category: "Pravachan",
       date: "14/06/2026",
       title: "कलियुगात उद्धाराचा एकच मार्ग: कर्म",
       description:
@@ -337,7 +338,7 @@ const BlogInner = () => {
     {
       id: 37,
       image: "blog/thirty-seven.jpg",
-      category: "Spiritual Guidance",
+      category: "Pravachan",
       date: "14/06/2026",
       title: "कलियुगातून रामराज्याकडे!",
       description:
@@ -347,7 +348,7 @@ const BlogInner = () => {
     {
       id: 38,
       image: "blog/thirty-eight.jpg",
-      category: "Spiritual Guidance",
+      category: "Pravachan",
       date: "21/06/2026",
       title: "पंचमहाभूतांवर राज करणारे सद्गुरु शंकर महाराज",
       description:
@@ -357,7 +358,7 @@ const BlogInner = () => {
     {
       id: 39,
       image: "blog/thirty-nine.jpg",
-      category: "Spiritual Guidance",
+      category: "Pravachan",
       date: "21/06/2026",
       title: "षड्रिपूंचे व्हायरस",
       description:
@@ -367,7 +368,7 @@ const BlogInner = () => {
     {
       id: 40,
       image: "blog/forty.jpg",
-      category: "Spiritual Guidance",
+      category: "Pravachan",
       date: "08/07/2026",
       title: "९८ प्रश्नांची व्यर्थ चिंता",
       description:
@@ -377,7 +378,7 @@ const BlogInner = () => {
     {
       id: 41,
       image: "blog/forty-one.jpg",
-      category: "Spiritual Guidance",
+      category: "Pravachan",
       date: "08/07/2026",
       title: "इच्छांना कर्मांची साथ हवी!",
       description:
@@ -387,7 +388,7 @@ const BlogInner = () => {
     {
       id: 42,
       image: "blog/forty-two.jpg",
-      category: "Spiritual Guidance",
+      category: "Pravachan",
       date: "08/07/2026",
       title: "परिसस्पर्शाशिवाय परिवर्तन नाही!",
       description:
@@ -397,7 +398,7 @@ const BlogInner = () => {
     {
       id: 43,
       image: "blog/forty-three.jpg",
-      category: "Spiritual Guidance",
+      category: "Pravachan",
       date: "15/07/2026",
       title: "नामजपाचे सामर्थ्य आणि अवलियांचे दिव्यत्व",
       description:
@@ -407,7 +408,7 @@ const BlogInner = () => {
     {
       id: 44,
       image: "blog/forty-four.jpg",
-      category: "Spiritual Guidance",
+      category: "Pravachan",
       date: "15/07/2026",
       title: "गुरुचं स्थान आणि गुरुवचनाचं महत्त्व",
       description:
@@ -417,7 +418,7 @@ const BlogInner = () => {
     {
       id: 45,
       image: "blog/forty-five.jpg",
-      category: "Spiritual Guidance",
+      category: "Pravachan",
       date: "15/07/2026",
       title: "स्वार्थी मनोवृत्ती आणि जीवनातील समस्या",
       description:
@@ -427,7 +428,7 @@ const BlogInner = () => {
     {
       id: 46,
       image: "blog/forty-six.jpg",
-      category: "Spiritual Guidance",
+      category: "Pravachan",
       date: "27/07/2026",
       title: "फक्त दोन पावलं पुढे टाका!",
       description:
@@ -437,7 +438,7 @@ const BlogInner = () => {
     {
       id: 47,
       image: "blog/forty-seven.jpg",
-      category: "Spiritual Guidance",
+      category: "Pravachan",
       date: "27/07/2026",
       title: "आपल्या जीवनाचा खरा जमा-खर्च",
       description:
@@ -447,7 +448,7 @@ const BlogInner = () => {
     {
       id: 48,
       image: "blog/forty-eight.jpg",
-      category: "Spiritual Guidance",
+      category: "Pravachan",
       date: "02/08/2026",
       title: "परावलंबी झालेली आपली बुद्धी",
       description:
@@ -457,7 +458,7 @@ const BlogInner = () => {
     {
       id: 49,
       image: "blog/forty-nine.jpg",
-      category: "Spiritual Guidance",
+      category: "Pravachan",
       date: "02/08/2026",
       title: "अंतर्मुख होण्याची गरज आणि विचारांची गती",
       description:
@@ -467,7 +468,7 @@ const BlogInner = () => {
     {
       id: 50,
       image: "blog/fifty.jpg",
-      category: "Spiritual Guidance",
+      category: "Pravachan",
       date: "08/08/2026",
       title: "वेग वाढला की चुकांना माफी नसते",
       description:
@@ -477,7 +478,7 @@ const BlogInner = () => {
     {
       id: 51,
       image: "blog/fifty-one.jpg",
-      category: "Spiritual Guidance",
+      category: "Pravachan",
       date: "08/08/2026",
       title: "नकारात्मक दृष्टिकोनातून स्वतःची सुटका करा",
       description:
@@ -487,7 +488,7 @@ const BlogInner = () => {
     {
       id: 52,
       image: "blog/fifty-two.jpg",
-      category: "Spiritual Guidance",
+      category: "Pravachan",
       date: "12/08/2026",
       title: "सातत्य असेल, तरच तप फलद्रूप होईल!",
       description:
@@ -497,7 +498,7 @@ const BlogInner = () => {
     {
       id: 53,
       image: "blog/fifty-three.jpg",
-      category: "Spiritual Guidance",
+      category: "Pravachan",
       date: "11/08/2026",
       title: "इतकं करूनही यश का मिळत नाही?",
       description:
@@ -507,7 +508,7 @@ const BlogInner = () => {
     {
       id: 54,
       image: "blog/fifty-four.jpg",
-      category: "Spiritual Guidance",
+      category: "Pravachan",
       date: "11/08/2026",
       title: "बाबा फक्त कोमल नाहीत, ते अग्नीही आहेत! (Part 1)",
       description:
@@ -517,7 +518,7 @@ const BlogInner = () => {
     {
       id: 55,
       image: "blog/fifty-five.jpg",
-      category: "Spiritual Guidance",
+      category: "Pravachan",
       date: "11/08/2026",
       title: "कर्माचे भोग स्वतःलाच भोगावे लागतात (Part 2)",
       description:
@@ -527,7 +528,7 @@ const BlogInner = () => {
     {
       id: 56,
       image: "blog/fifty-six.jpg",
-      category: "Spiritual Guidance",
+      category: "Pravachan",
       date: "03/10/2026",
       title: "पापही करा, पण भगवंताला साक्षी ठेवून, शुद्ध भावाने!",
       description:
@@ -537,7 +538,7 @@ const BlogInner = () => {
     {
       id: 57,
       image: "blog/fifty-seven.jpg",
-      category: "Spiritual Guidance",
+      category: "Pravachan",
       date: "03/10/2026",
       title: "सद्गुरु शंकर महाराजांनी सांगितलेलं अध्यात्म",
       description:
@@ -547,7 +548,7 @@ const BlogInner = () => {
     {
       id: 58,
       image: "blog/fifty-eight.jpg",
-      category: "Spiritual Guidance",
+      category: "Pravachan",
       date: "03/10/2026",
       title: "आमच्यासारख्यांसाठी कोणता देव आहे?",
       description:
@@ -557,14 +558,97 @@ const BlogInner = () => {
     {
       id: 59,
       image: "blog/fifty-nine.jpg",
-      category: "Spiritual Guidance",
+      category: "Pravachan",
       date: "03/10/2026",
       title: "शंकर महाराजांच्या लीलांचा अंत नाही",
       description:
         "जगातले सर्वात मोठे Transformer म्हणजे शंकर महाराज. होत्याचं नव्हतं आणि नव्हत्याचं होतं करणं हे शंकर महाराजांच्याच दरबारात अनुभवायला मिळतं. अशक्य ते शक्य करणारे हे अवलिया.",
       author: "MBSM Trust"
+    },
+    {
+      id: 60,
+      image: "blog/nirupan-one.png",
+      category: "Nirupan",
+      date: "18/10/2026",
+      title: "पहिले पुष्प: अशा अमूल्य संधी कधीही सोडू नयेत!",
+      description: "भगवंत प्रत्येकाला भरभरून देतो. मात्र ते आपण आपल्या कर्मांनी गमावून बसतो. असे क्षण आपल्या आयुष्यात खूप कमी येतात की जिथून आपल्याला काहीतरी पॉझिटिव्ह प्राप्त होतं. जे त्या वेळी मिळतं ते आपण प्राप्त करून घेतलं पाहिजे, स्वीकारलं पाहिजे.",
+      author: "MBSM Trust"
+    },
+    {
+      id: 61,
+      image: "blog/nirupan-two.png",
+      category: "Nirupan",
+      date: "18/10/2026",
+      title: "पुष्प दुसरे: कलियुगात उद्धाराचा एकच मार्ग: कर्म",
+      description: "भगवंताला कोणी अल्लाह ताला म्हणतं, कोणी येशू म्हणतं. जिथे आपली बुद्धी संपते, तिथे भगवंताचा प्रांत सुरू होतो. या कलियुगाची निर्मिती कर्मावर झाली आहे आणि कलियुगाचा धर्म कर्म आहे.",
+      author: "MBSM Trust"
+    },
+    {
+      id: 62,
+      image: "blog/nirupan-three.png",
+      category: "Nirupan",
+      date: "18/10/2026",
+      title: "पुष्प तिसरे: कलियुगातून रामराज्याकडे!",
+      description: "आपल्या जीवनात कितीतरी प्रश्न, अडचणी आणि समस्या असतात. अशा या कलियुगात सुख, शांती आणि समाधान मिळवणं, म्हणजे शिव धनुष्य पेलण्यासारखं आहे. या सगळ्या मार्गांमध्ये सर्वोच्च स्थान नाम-जपाचं आहे.",
+      author: "MBSM Trust"
+    },
+    {
+      id: 63,
+      image: "blog/nirupan-four.png",
+      category: "Nirupan",
+      date: "18/10/2026",
+      title: "पुष्प चौथे: पंचमहाभूतांवर राज करणारे सद्गुरु श्री शंकर महाराज",
+      description: "दत्तप्रभूंचं सप्तर्शी या ब्राह्मण्डात प्रचलित आहे. त्यातलं शेवटचं स्वरुप म्हणजे सद्गुरु शंकर महाराज. शंकर महाराज या भूमंडळी अयोनी प्रकट झाले आहेत. या पंचमहाभूतांवर या अवलियांचं वर्चस्व, आधिपत्य आणि नियंत्रण आहे.",
+      author: "MBSM Trust"
+    },
+    {
+      id: 64,
+      image: "blog/nirupan-five.png",
+      category: "Nirupan",
+      date: "18/10/2026",
+      title: "पुष्प पाचवे: षडरिपूंचे व्हायरस",
+      description: "मनात नाम स्थानापन्न झालं की जी अनुभुती येते ती शब्दात व्यक्त होत नाही. जसं मोबाईलचं रीचार्ज होतं तसं आपल्या जीवनाचं रीचार्ज नाम-जपाने होतं. या अंतर्मनाची जाणीव आणि जागृती झाली तरच या मानव योनीत जन्म घेणं सार्थक होतं.",
+      author: "MBSM Trust"
+    },
+    {
+      id: 65,
+      image: "blog/nirupan-six.png",
+      category: "Nirupan",
+      date: "18/10/2026",
+      title: "पुष्प सहावे: ९८ प्रश्नांची व्यर्थ चिंता",
+      description: "जन्माला आल्यापासून शेवटच्या श्वासापर्यंत आपले प्रश्न, अडचणी काही संपत नाहीत. परंतु तुकोबारायांनी सांगितल्या प्रमाणे, 'व्यर्थ चिंता करूनी, नर देता जाळीला.' या ९८ प्रश्नांची व्यर्थ चिंता आपण करतो.",
+      author: "MBSM Trust"
+    },
+    {
+      id: 66,
+      image: "blog/nirupan-seven.png",
+      category: "Nirupan",
+      date: "18/10/2026",
+      title: "पुष्प सातवे: इच्छांना कर्मांची साथ हवी!",
+      description: "जर बीज पेरलं नाही तर पीक कसं येणार! आपण वर्तमानात जर कर्मच केलं नाही तर भविष्य काळातलं आपल्या माणसासारखं स्वप्न साकार कसं होणार? या कलियुगाचा धर्म हा कर्म आहे.",
+      author: "MBSM Trust"
+    },
+    {
+      id: 67,
+      image: "blog/nirupan-eight.png",
+      category: "Nirupan",
+      date: "18/10/2026",
+      title: "पुष्प आठवे: परिस स्पर्शाशिवाय परिवर्तन नाही!",
+      description: "इथला धर्म हा कर्म आहे. चांगले कर्म केले तर चांगली फळे मिळणार. जर चुकीचे कर्म केले तर वाईट फळे मिळणार. ज्याप्रमाणे परिसाचा स्पर्श लोखंडाला झाला तर त्या लोखंडाचं सोन्यामध्ये रूपांतर होतं, म्हणून भगवंताचा तो परिसस्पर्श होणं आवश्यक आहे.",
+      author: "MBSM Trust"
     }
   ];
+
+  const [selectedCategory, setSelectedCategory] = useState("All Articles");
+  const categories = ["All Articles", "Pravachan", "Nirupan"];
+
+  // Filter blogs based on selected category
+  const filteredBlogs = useMemo(() => {
+    if (selectedCategory === "All Articles") {
+      return blogs;
+    }
+    return blogs.filter((blog) => blog.category === selectedCategory);
+  }, [selectedCategory, blogs]);
 
   return (
     <section className='blog'>
@@ -589,50 +673,82 @@ const BlogInner = () => {
             </div>
           </div>
         </div>
-        <div className='row gutter-30'>
-          {blogs.map((blog, index) => (
-            <div key={blog.id} className='col-12 col-md-6 col-xl-3 col-xxl-3'>
-              <div
-                className='blog__single'
-                data-aos='fade-up'
-                data-aos-duration={1000}
-                data-aos-delay={index % 4 === 0 ? 0 : index % 4 === 1 ? 300 : index % 4 === 2 ? 600 : 900}
-              >
-                <div className='blog__single-thumb'>
-                  <Link href={`/blog/${blog.id}`}>
-                    <img
-                      src={`/assets/images/${blog.image}`}
-                      alt={blog.title}
-                    />
-                  </Link>
-                </div>
-                <div className='blog__single-meta'>
-                  <p>
-                    <i className='fa-solid fa-calendar-days' /> {blog.date}
-                  </p>
-                  <p>
-                    <i className='fa-solid fa-user' /> {blog.author}
-                  </p>
-                </div>
-                <div className='blog__single-content'>
-                  <h5>
+        {/* Category Filter Buttons */}
+        <div className='row'>
+          <div className='col-12'>
+            <div className='blog__filter' data-aos='fade-up' data-aos-duration={1000}>
+              <ul className='blog__filter-list'>
+                {categories.map((category) => (
+                  <li key={category}>
+                    <button
+                      type='button'
+                      className={selectedCategory === category ? "active" : ""}
+                      onClick={() => setSelectedCategory(category)}
+                    >
+                      {category}
+                    </button>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
+        </div>
+        {filteredBlogs.length > 0 ? (
+          <div className='row gutter-30'>
+            {filteredBlogs.map((blog, index) => (
+              <div key={blog.id} className='col-12 col-md-6 col-xl-3 col-xxl-3'>
+                <div
+                  className='blog__single'
+                  data-aos='fade-up'
+                  data-aos-duration={1000}
+                  data-aos-delay={index % 4 === 0 ? 0 : index % 4 === 1 ? 300 : index % 4 === 2 ? 600 : 900}
+                >
+                  <div className='blog__single-thumb'>
                     <Link href={`/blog/${blog.id}`}>
-                      {blog.title}
+                      <img
+                        src={`/assets/images/${blog.image}`}
+                        alt={blog.title}
+                      />
                     </Link>
-                  </h5>
-                </div>
-                <div className='blog__single-cta'>
-                  <Link href={`/blog/${blog.id}`}>
-                    Read More <i className='fa-solid fa-arrow-right' />
-                  </Link>
-                </div>
-                <div className='spade-two'>
-                  <img src='/assets/images/blog/spade.png' alt='Image_inner' />
+                  </div>
+                  <div className='blog__single-meta'>
+                    <p>
+                      <i className='fa-solid fa-calendar-days' /> {blog.date}
+                    </p>
+                    <p>
+                      <i className='fa-solid fa-user' /> {blog.author}
+                    </p>
+                  </div>
+                  <div className='blog__single-content'>
+                    <h5>
+                      <Link href={`/blog/${blog.id}`}>
+                        {blog.title}
+                      </Link>
+                    </h5>
+                  </div>
+                  <div className='blog__single-cta'>
+                    <Link href={`/blog/${blog.id}`}>
+                      Read More <i className='fa-solid fa-arrow-right' />
+                    </Link>
+                  </div>
+                  <div className='spade-two'>
+                    <img src='/assets/images/blog/spade.png' alt='Image_inner' />
+                  </div>
                 </div>
               </div>
+            ))}
+          </div>
+        ) : (
+          <div className='row justify-content-center'>
+            <div className='col-12 col-md-8'>
+              <div className='blog__empty' data-aos='fade-up' data-aos-duration={1000}>
+                <i className='fa-solid fa-book-open' />
+                <h4>No Articles Yet</h4>
+                <p>New articles for this category will be available soon. Please check back later!</p>
+              </div>
             </div>
-          ))}
-        </div>
+          </div>
+        )}
       </div>
       <div className='spade'>
         <img src='/assets/images/blog/spade-base.png' alt='Image_inner' />
