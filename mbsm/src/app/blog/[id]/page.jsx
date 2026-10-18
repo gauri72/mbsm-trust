@@ -9,7 +9,8 @@ import AOSWrap from "@/helper/AOSWrap";
 import CustomCursor from "@/helper/CustomCursor";
 
 export async function generateMetadata({ params }) {
-  const blogId = params.id;
+  const resolvedParams = await params;
+  const blogId = resolvedParams.id;
   
   const blogs = [
     {
@@ -347,6 +348,11 @@ export async function generateMetadata({ params }) {
       id: 67,
       title: "पुष्प आठवे: परिस स्पर्शाशिवाय परिवर्तन नाही!",
       description: "इथला धर्म हा कर्म आहे. चांगले कर्म केले तर चांगली फळे मिळणार. जर चुकीचे कर्म केले तर वाईट फळे मिळणार. ज्याप्रमाणे परिसाचा स्पर्श लोखंडाला झाला तर त्या लोखंडाचं सोन्यामध्ये रूपांतर होतं, म्हणून भगवंताचा तो परिसस्पर्श होणं आवश्यक आहे."
+    },
+    {
+      id: 68,
+      title: "गुरूची संकल्पना!",
+      description: "गुरू ही एक व्यक्ती नसून, गुरू हे एक तत्त्व आहे. गुरू हे एक स्थान नसून, गुरू हे एक तत्त्व आहे. जो त्या गुरूच्या तत्त्वाचा अंमल आपल्या दैनंदिन जीवनात करतो, तो त्या तत्त्वांचा शिष्य आहे. ही गुरूची संकल्पना आहे."
     }
   ];
 
@@ -358,7 +364,8 @@ export async function generateMetadata({ params }) {
   };
 }
 
-const page = ({ params }) => {
+const page = async ({ params }) => {
+  const resolvedParams = await params;
   return (
     <AOSWrap>
       <section className='page-wrapper'>
@@ -378,7 +385,7 @@ const page = ({ params }) => {
         <BreadcrumbOne title='Blog Details' />
 
         {/* BlogDetail */}
-        <BlogDetail blogId={params.id} />
+        <BlogDetail blogId={resolvedParams.id} />
 
         {/* CtaSectionTwo */}
         <CtaSectionTwo />
