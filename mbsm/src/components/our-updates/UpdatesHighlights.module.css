@@ -1,0 +1,121 @@
+.highlights {
+  padding: 60px 0 90px;
+  background-color: var(--template-bg);
+}
+
+.gridHeader {
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+.label {
+  display: inline-block;
+  font-family: var(--nunito);
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--template-color);
+  opacity: 0.5;
+  line-height: 1 !important;
+}
+
+/* card */
+.card {
+  position: relative;
+  background-color: var(--white);
+  border-radius: 20px;
+  padding: 36px 28px 32px;
+  box-shadow: var(--shadow);
+  height: 100%;
+  transition: var(--transition);
+  overflow: hidden;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 50px rgba(139, 30, 30, 0.12);
+}
+
+.card:hover .accentLine {
+  width: 100%;
+}
+
+.iconWrap {
+  width: 52px;
+  height: 52px;
+  border-radius: 14px;
+  background-color: rgba(139, 30, 30, 0.08);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 24px;
+  line-height: 0 !important;
+  transition: var(--transition);
+}
+
+.card:hover .iconWrap {
+  background-color: #8b1e1e;
+}
+
+.iconWrap i {
+  font-size: 20px;
+  color: #8b1e1e;
+  line-height: 1 !important;
+  transition: var(--transition);
+}
+
+.card:hover .iconWrap i {
+  color: var(--white);
+}
+
+.cardBody {
+  line-height: 0 !important;
+}
+
+.count {
+  font-family: var(--nunito);
+  font-size: 38px;
+  font-weight: 800;
+  color: var(--secondary-color);
+  line-height: 1.1 !important;
+  margin-bottom: 6px;
+}
+
+.cardLabel {
+  font-family: var(--nunito);
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--secondary-color);
+  line-height: 1.3 !important;
+  margin-bottom: 10px;
+}
+
+.desc {
+  font-family: var(--nunito-sans);
+  font-size: 14px;
+  line-height: 24px !important;
+  color: var(--template-color);
+  margin: 0;
+}
+
+/* bottom accent bar */
+.accentLine {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 3px;
+  width: 0;
+  background: linear-gradient(90deg, #8b1e1e, var(--base-color));
+  border-radius: 0 0 20px 20px;
+  transition: width 0.5s ease;
+}
+
+@media (max-width: 576px) {
+  .highlights {
+    padding: 40px 0 70px;
+  }
+  .count {
+    font-size: 30px;
+  }
+}

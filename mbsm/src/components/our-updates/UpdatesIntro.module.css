@@ -1,0 +1,10 @@
+.intro {
+  padding: 80px 0 70px;
+  background-color: var(--template-bg);
+}
+
+@media (max-width: 768px) {
+  .intro {
+    padding: 60px 0 50px;
+  }
+}
