@@ -371,20 +371,12 @@
   }
 
   .footer-two__widget {
-    text-align: left;
-    
-    @media only screen and (max-width: 991px) {
-      text-align: center;
-    }
+    text-align: center;
     
     .footer-two__widget-logo {
       margin-bottom: 30px;
       display: flex;
-      justify-content: flex-start;
-      
-      @media only screen and (max-width: 991px) {
-        justify-content: center;
-      }
+      justify-content: center;
     }
 
     p {
@@ -418,13 +410,9 @@
     .line {
       display: flex;
       align-items: center;
-      justify-content: flex-start;
+      justify-content: center;
       gap: 6px;
       margin-top: 16px;
-      
-      @media only screen and (max-width: 991px) {
-        justify-content: center;
-      }
     }
 
     span {
@@ -496,39 +484,30 @@
     }
 
     .footer-two__widget-content--contact {
+      ul {
+        align-items: center !important;
+      }
       li {
         margin-bottom: 16px;
-        text-align: left;
-        
-        @media only screen and (max-width: 991px) {
-          text-align: center;
-        }
-        
+        text-align: center !important;
+
         &:nth-last-of-type(1) {
           margin-bottom: 0px;
         }
       }
       a {
-        gap: 16px;
-        text-transform: lowercase;
-        align-items: flex-start;
-        justify-content: flex-start;
+        gap: 12px;
+        text-transform: none;
+        align-items: center !important;
+        justify-content: center !important;
         color: var(--white);
-        
-        @media only screen and (max-width: 991px) {
-          align-items: center;
-          justify-content: center;
-        }
-        
+
         i {
           color: var(--base-color);
-          transform: rotate(0deg);
-          font-size: 18px;
-          margin-top: 6px;
-          
-          @media only screen and (max-width: 991px) {
-            margin-top: 0;
-          }
+          transform: rotate(0deg) !important;
+          font-size: 16px;
+          margin-top: 0 !important;
+          flex-shrink: 0;
         }
       }
     }

@@ -6,8 +6,10 @@ const FooterOne = () => {
     <>
       <footer className='footer-two'>
         <div className='container'>
-          <div className='row gutter-60'>
-            <div className='col-12 col-md-6 col-xl-3'>
+          <div className='row gy-5 justify-content-xl-between'>
+
+            {/* Col 1 — Brand: full width on mobile, full width on tablet (own row), 4-col on desktop */}
+            <div className='col-12 col-xl-4'>
               <div
                 className='footer-two__widget'
                 data-aos='fade-up'
@@ -15,22 +17,24 @@ const FooterOne = () => {
               >
                 <div className='footer-two__widget-logo'>
                   <Link href='/'>
-                    <img src='/assets/images/logo-light.png' alt='Image_inner' />
+                    <img src='/assets/images/logo-light.png' alt='MBSM Trust' />
                   </Link>
                 </div>
-                <div className='footer-two__widget-content'>
+                <div className='footer-two__widget-content footer-two__widget-content--brand'>
                   <p>
                     MBSM Trust is a Hindu religious and spiritual organization dedicated to serving humanity through compassionate service.
                   </p>
                 </div>
               </div>
             </div>
-            <div className='col-12 col-md-6 col-xl-2 offset-xl-1'>
+
+            {/* Col 2 — Quick Links: full width on mobile, 4-col on tablet, 2-col on desktop */}
+            <div className='col-12 col-md-4 col-xl-2'>
               <div
                 className='footer-two__widget'
                 data-aos='fade-up'
                 data-aos-duration={1000}
-                data-aos-delay={200}
+                data-aos-delay={150}
               >
                 <div className='footer-two__widget-intro'>
                   <h5>Quick Links</h5>
@@ -40,105 +44,50 @@ const FooterOne = () => {
                     <span className='small-line' />
                   </div>
                 </div>
-                <div className='footer-two__widget-content'>
+                <div className='footer-two__widget-content footer-two__widget-content--pills'>
                   <ul>
-                    <li>
-                      <Link href='/'>
-                        <i className='fa-solid fa-arrow-right' />
-                        Home
-                      </Link>
-                    </li>
-                    <li>
-                      <Link href='/about-us'>
-                        <i className='fa-solid fa-arrow-right' />
-                        About Us
-                      </Link>
-                    </li>
-                    <li>
-                      <Link href='/our-causes'>
-                        <i className='fa-solid fa-arrow-right' />
-                        Our Projects
-                      </Link>
-                    </li>
-                    <li>
-                      <Link href='/donate-us'>
-                        <i className='fa-solid fa-arrow-right' />
-                        Donate Us
-                      </Link>
-                    </li>
-                    <li>
-                      <Link href='/our-blogs'>
-                        <i className='fa-solid fa-arrow-right' />
-                        Our Blogs
-                      </Link>
-                    </li>
-                    <li>
-                      <Link href='/contact-us'>
-                        <i className='fa-solid fa-arrow-right' />
-                        Contact Us
-                      </Link>
-                    </li>
+                    <li><Link href='/'><i className='fa-solid fa-arrow-right' />Home</Link></li>
+                    <li><Link href='/our-updates'><i className='fa-solid fa-arrow-right' />Our Updates</Link></li>
+                    <li><Link href='/about-us'><i className='fa-solid fa-arrow-right' />About Us</Link></li>
+                    <li><Link href='/contact-us'><i className='fa-solid fa-arrow-right' />Contact Us</Link></li>
                   </ul>
                 </div>
               </div>
             </div>
-            <div className='col-12 col-md-6 col-xl-3'>
+
+            {/* Col 3 — Explore Work: full width on mobile, 4-col on tablet, 2-col on desktop */}
+            <div className='col-12 col-md-4 col-xl-2'>
               <div
-                className='footer-two__widget footer-two__widget--alternate'
+                className='footer-two__widget'
                 data-aos='fade-up'
                 data-aos-duration={1000}
-                data-aos-delay={400}
+                data-aos-delay={300}
               >
                 <div className='footer-two__widget-intro'>
-                  <h5>Our Services</h5>
+                  <h5>Explore Work</h5>
                   <div className='line'>
                     <span className='large-line' />
                     <span className='small-line' />
                     <span className='small-line' />
                   </div>
                 </div>
-                <div className='footer-two__widget-content'>
+                <div className='footer-two__widget-content footer-two__widget-content--pills'>
                   <ul>
-                    <li>
-                      <Link href='/our-causes'>
-                        <i className='fa-solid fa-arrow-right' />
-                        Spiritual Services
-                      </Link>
-                    </li>
-                    <li>
-                      <Link href='/our-causes'>
-                        <i className='fa-solid fa-arrow-right' />
-                        Annadanam Programs
-                      </Link>
-                    </li>
-                    <li>
-                      <Link href='/our-causes'>
-                        <i className='fa-solid fa-arrow-right' />
-                        Education Initiatives
-                      </Link>
-                    </li>
-                    <li>
-                      <Link href='/our-causes'>
-                        <i className='fa-solid fa-arrow-right' />
-                        Medical Care Services
-                      </Link>
-                    </li>
-                    <li>
-                      <Link href='/our-causes'>
-                        <i className='fa-solid fa-arrow-right' />
-                        Community Events
-                      </Link>
-                    </li>
+                    <li><Link href='/our-causes'><i className='fa-solid fa-arrow-right' />Our Projects</Link></li>
+                    <li><Link href='/donate-us'><i className='fa-solid fa-arrow-right' />Donate Us</Link></li>
+                    <li><Link href='/our-blogs'><i className='fa-solid fa-arrow-right' />Our Blogs</Link></li>
                   </ul>
                 </div>
               </div>
             </div>
-            <div className='col-12 col-md-6 col-xl-3'>
+
+            {/* Col 4 — Get In Touch: full width on mobile, 4-col on tablet, 3-col on desktop */}
+            <div className='col-12 col-md-4 col-xl-3'>
               <div
                 className='footer-two__widget footer-two__widget--alternate'
                 data-aos='fade-up'
                 data-aos-duration={1000}
-                data-aos-delay={600}
+                data-aos-delay={450}
               >
                 <div className='footer-two__widget-intro'>
                   <h5>Get In Touch</h5>
@@ -151,11 +100,7 @@ const FooterOne = () => {
                 <div className='footer-two__widget-content footer-two__widget-content--contact'>
                   <ul>
                     <li>
-                      <Link
-                        href='https://maps.app.goo.gl/xzwdnNpZWCxWuPX48'
-                        target='_blank'
-                        rel='noreferrer'
-                      >
+                      <Link href='https://maps.app.goo.gl/xzwdnNpZWCxWuPX48' target='_blank' rel='noreferrer'>
                         <i className='fa-solid fa-location-dot' />
                         F.70, MIDC, Ahilyanagar, 414111
                       </Link>
@@ -176,8 +121,10 @@ const FooterOne = () => {
                 </div>
               </div>
             </div>
+
           </div>
         </div>
+
         <div className='footer-two__copyright'>
           <div className='container'>
             <div className='row'>
@@ -187,35 +134,17 @@ const FooterOne = () => {
                     Copyright © <span id='copyrightYear' />{" "}
                     <Link href='/'>MBSM Trust</Link>. All rights reserved.
                   </p>
-                  <p style={{ marginTop: '10px', fontSize: '14px', color: '#ffffff' }}>
+                  <p className='footer-two__credit'>
                     Designed and developed by Gauri Kolekar
                   </p>
-                  <div className='social footer-copyright-social' style={{ marginTop: '15px' }}>
-                    <Link
-                      href='https://wa.me/917588797788'
-                      target='_blank'
-                      rel='noreferrer'
-                      aria-label='contact us on whatsapp'
-                      title='whatsapp'
-                    >
+                  <div className='social footer-copyright-social'>
+                    <Link href='https://wa.me/917588797788' target='_blank' rel='noreferrer' aria-label='contact us on whatsapp' title='whatsapp'>
                       <i className='fa-brands fa-whatsapp' />
                     </Link>
-                    <Link
-                      href='https://www.instagram.com/mangal_bhakta_seva_mandal_?igsh=NDVnb3JhendmcmFs'
-                      target='_blank'
-                      rel='noreferrer'
-                      aria-label='follow us on instagram'
-                      title='instagram'
-                    >
+                    <Link href='https://www.instagram.com/mangal_bhakta_seva_mandal_?igsh=NDVnb3JhendmcmFs' target='_blank' rel='noreferrer' aria-label='follow us on instagram' title='instagram'>
                       <i className='fa-brands fa-instagram' />
                     </Link>
-                    <Link
-                      href='https://youtube.com/@mangalbhaktasevamandaltrus2349?si=uVc-1P931b2zX2fH'
-                      target='_blank'
-                      rel='noreferrer'
-                      aria-label='subscribe to our youtube channel'
-                      title='youtube'
-                    >
+                    <Link href='https://youtube.com/@mangalbhaktasevamandaltrus2349?si=uVc-1P931b2zX2fH' target='_blank' rel='noreferrer' aria-label='subscribe to our youtube channel' title='youtube'>
                       <i className='fa-brands fa-youtube' />
                     </Link>
                   </div>
@@ -224,18 +153,11 @@ const FooterOne = () => {
             </div>
           </div>
         </div>
+
         <div className='sprade' data-aos='zoom-in' data-aos-duration={1000}>
-          <img
-            src='/assets/images/sprade.png'
-            alt='Image_inner'
-            className='base-img'
-          />
+          <img src='/assets/images/sprade.png' alt='Image_inner' className='base-img' />
         </div>
-        <div
-          className='sprade-light'
-          data-aos='zoom-in'
-          data-aos-duration={1000}
-        >
+        <div className='sprade-light' data-aos='zoom-in' data-aos-duration={1000}>
           <img src='/assets/images/sprade-light.png' alt='Image_inner' />
         </div>
       </footer>
