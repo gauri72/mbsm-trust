@@ -12,7 +12,7 @@ const UpdatesBreadcrumb = () => {
               <i className="icon-donation" />
               Where there&apos;s less, we give our best!
             </span>
-            <h2 className={styles.title}>Our Updates</h2>
+            <h2 className={styles.title}>Our Latest News</h2>
             <nav className={styles.breadcrumb} aria-label="breadcrumb">
               <ol>
                 <li>
@@ -21,7 +21,7 @@ const UpdatesBreadcrumb = () => {
                 <li aria-hidden="true">
                   <i className="fa-solid fa-chevron-right" />
                 </li>
-                <li aria-current="page">Our Updates</li>
+                <li aria-current="page">Our Latest News</li>
               </ol>
             </nav>
           </div>

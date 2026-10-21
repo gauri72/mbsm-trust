@@ -10,7 +10,7 @@ import RecentActivities from "@/components/our-updates/RecentActivities";
 import CtaSectionTwo from "@/components/CtaSectionTwo";
 
 export const metadata = {
-  title: "Our Updates | MBSM Trust",
+  title: "Our Latest News | MBSM Trust",
   description:
     "Stay connected with the latest news, events, seva programs, and spiritual milestones from Mangal Bhakta Seva Mandal Trust.",
 };
@@ -23,7 +23,7 @@ const OurUpdatesPage = () => {
         <CustomCursor />
         <TopBarOne />
         <HeaderOne />
-        <BreadcrumbOne title="Our Updates" />
+        <BreadcrumbOne title="Our Latest News" />
         <RecentActivities />
         <CtaSectionTwo />
         <FooterOne />

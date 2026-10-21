@@ -1,0 +1,83 @@
+/* ── Card ── */
+.thumbLink {
+  display: block;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+/* square poster, centred; hover zoom + tilt comes from the theme */
+.card :global(.thumb) img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 15px;
+  transition: var(--transition);
+}
+
+.card :global(.thumb) {
+  margin-bottom: 20px;
+}
+
+.content {
+  align-items: center;
+  text-align: center;
+  padding-bottom: 8px;
+}
+
+.content h6 {
+  margin-top: 0;
+}
+
+.cta {
+  margin-top: 16px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 700;
+  color: var(--secondary-color);
+  transition: color 0.3s ease;
+}
+
+.cta i {
+  color: #8b1e1e;
+  transition: transform 0.3s ease;
+}
+
+.cta:hover {
+  color: #8b1e1e;
+}
+
+.cta:hover i {
+  transform: translateX(4px);
+}
+
+/* ── Empty category ── */
+.empty {
+  text-align: center;
+  padding: 20px 0 60px;
+}
+
+.emptyIcon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: rgba(139, 30, 30, 0.08);
+  color: #8b1e1e;
+  font-size: 32px;
+  margin-bottom: 18px;
+}
+
+.emptyBadge {
+  display: block;
+  font-family: var(--nunito);
+  font-size: clamp(24px, 3vw, 32px);
+  font-weight: 800;
+  color: var(--secondary-color);
+  margin-bottom: 8px;
+}

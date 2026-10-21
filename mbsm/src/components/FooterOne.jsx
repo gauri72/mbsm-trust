@@ -47,8 +47,8 @@ const FooterOne = () => {
                 <div className='footer-two__widget-content footer-two__widget-content--pills'>
                   <ul>
                     <li><Link href='/'><i className='fa-solid fa-arrow-right' />Home</Link></li>
-                    <li><Link href='/our-updates'><i className='fa-solid fa-arrow-right' />Our Updates</Link></li>
                     <li><Link href='/about-us'><i className='fa-solid fa-arrow-right' />About Us</Link></li>
+                    <li><Link href='/donate-us'><i className='fa-solid fa-arrow-right' />Donate Us</Link></li>
                     <li><Link href='/contact-us'><i className='fa-solid fa-arrow-right' />Contact Us</Link></li>
                   </ul>
                 </div>
@@ -73,8 +73,9 @@ const FooterOne = () => {
                 </div>
                 <div className='footer-two__widget-content footer-two__widget-content--pills'>
                   <ul>
+                    <li><Link href='/our-updates'><i className='fa-solid fa-arrow-right' />Our Latest News</Link></li>
                     <li><Link href='/our-causes'><i className='fa-solid fa-arrow-right' />Our Projects</Link></li>
-                    <li><Link href='/donate-us'><i className='fa-solid fa-arrow-right' />Donate Us</Link></li>
+                    <li><Link href='/our-events'><i className='fa-solid fa-arrow-right' />Our Events</Link></li>
                     <li><Link href='/our-blogs'><i className='fa-solid fa-arrow-right' />Our Blogs</Link></li>
                   </ul>
                 </div>

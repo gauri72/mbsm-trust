@@ -27,7 +27,44 @@ const HeaderOne = () => {
     return () => { document.body.style.overflow = ""; };
   }, [mobileMenu]);
 
-  const exploreActive = ["/our-causes", "/donate-us", "/our-blogs", "/blog"].includes(pathname);
+  const exploreItems = [
+    { href: "/our-updates", label: "Our Latest News", desc: "What's new at MBSM Trust", icon: "fa-solid fa-bullhorn" },
+    { href: "/our-causes", label: "Our Projects", desc: "Seva & community initiatives", icon: "fa-solid fa-seedling" },
+    { href: "/our-events", label: "Our Events", desc: "Utsavs & spiritual programs", icon: "fa-solid fa-calendar-days" },
+    { href: "/our-publications", label: "Our Publications", desc: "Books & granths", icon: "fa-solid fa-book" },
+    { href: "/our-blogs", label: "Our Blogs", desc: "Teachings & spiritual insights", icon: "fa-solid fa-book-open", match: "/blog" },
+    { href: "/our-gallery", label: "Our Gallery", desc: "Moments from seva & events", icon: "fa-solid fa-images" },
+  ];
+  const isExploreItemActive = item =>
+    pathname === item.href || (item.match && pathname.startsWith(item.match + "/"));
+  const exploreActive = exploreItems.some(isExploreItemActive);
+
+  // direct links shown before and after the Explore Work menu
+  const linksBeforeExplore = [
+    { href: "/", label: "Home" },
+    { href: "/about-us", label: "About Us" },
+  ];
+  const linksAfterExplore = [
+    { href: "/donate-us", label: "Donate Us" },
+    { href: "/contact-us", label: "Contact Us" },
+  ];
+
+  const renderDesktopLink = link => (
+    <li key={link.href} className={`navbar__item nav-fade ${pathname === link.href ? "active" : ""}`}>
+      <Link href={link.href}>{link.label}</Link>
+    </li>
+  );
+
+  const renderMobileLink = link => (
+    <Link
+      key={link.href}
+      href={link.href}
+      className={`mbsm-mobile-nav__link ${pathname === link.href ? "mbsm-mobile-nav__link--active" : ""}`}
+      onClick={() => setMobileMenu(false)}
+    >
+      {link.label}
+    </Link>
+  );
 
   return (
     <>
@@ -49,52 +86,26 @@ const HeaderOne = () => {
                   <div className='navbar__menu-wrapper'>
                     <div className='navbar__menu d-none d-xl-block'>
                       <ul className='navbar__list'>
-                        <li className={`navbar__item nav-fade ${pathname === "/" ? "active" : ""}`}>
-                          <Link href='/'>Home</Link>
-                        </li>
-                        <li className={`navbar__item nav-fade ${pathname === "/our-updates" ? "active" : ""}`}>
-                          <Link href='/our-updates'>Our Updates</Link>
-                        </li>
+                        {linksBeforeExplore.map(renderDesktopLink)}
                         <li className={`navbar__item navbar__item--has-children navbar__item--explore nav-fade ${exploreActive ? "active" : ""}`}>
                           <span className='navbar__dropdown-label navbar__dropdown-label--explore'>
                             Explore Work
                           </span>
                           <ul className='navbar__sub-menu navbar__sub-menu--explore'>
-                            <li className={pathname === "/our-causes" ? "active" : ""}>
-                              <Link href='/our-causes'>
-                                <span className='explore-menu__icon'><i className='fa-solid fa-seedling' /></span>
-                                <span className='explore-menu__text'>
-                                  <strong>Our Projects</strong>
-                                  <em>Seva &amp; community initiatives</em>
-                                </span>
-                              </Link>
-                            </li>
-                            <li className={pathname === "/donate-us" ? "active" : ""}>
-                              <Link href='/donate-us'>
-                                <span className='explore-menu__icon'><i className='fa-solid fa-hand-holding-heart' /></span>
-                                <span className='explore-menu__text'>
-                                  <strong>Donate Us</strong>
-                                  <em>Support our spiritual mission</em>
-                                </span>
-                              </Link>
-                            </li>
-                            <li className={["/our-blogs", "/blog"].includes(pathname) ? "active" : ""}>
-                              <Link href='/our-blogs'>
-                                <span className='explore-menu__icon'><i className='fa-solid fa-book-open' /></span>
-                                <span className='explore-menu__text'>
-                                  <strong>Our Blogs</strong>
-                                  <em>Teachings &amp; spiritual insights</em>
-                                </span>
-                              </Link>
-                            </li>
+                            {exploreItems.map(item => (
+                              <li key={item.href} className={isExploreItemActive(item) ? "active" : ""}>
+                                <Link href={item.href}>
+                                  <span className='explore-menu__icon'><i className={item.icon} /></span>
+                                  <span className='explore-menu__text'>
+                                    <strong>{item.label}</strong>
+                                    <em>{item.desc}</em>
+                                  </span>
+                                </Link>
+                              </li>
+                            ))}
                           </ul>
                         </li>
-                        <li className={`navbar__item nav-fade ${pathname === "/about-us" ? "active" : ""}`}>
-                          <Link href='/about-us'>About Us</Link>
-                        </li>
-                        <li className={`navbar__item nav-fade ${pathname === "/contact-us" ? "active" : ""}`}>
-                          <Link href='/contact-us'>Contact Us</Link>
-                        </li>
+                        {linksAfterExplore.map(renderDesktopLink)}
                       </ul>
                     </div>
                     <div className='contact-btn'>
@@ -153,21 +164,7 @@ const HeaderOne = () => {
 
           {/* Nav links */}
           <nav className='mbsm-mobile-nav__links'>
-            <Link
-              href='/'
-              className={`mbsm-mobile-nav__link ${pathname === "/" ? "mbsm-mobile-nav__link--active" : ""}`}
-              onClick={() => setMobileMenu(false)}
-            >
-              Home
-            </Link>
-
-            <Link
-              href='/our-updates'
-              className={`mbsm-mobile-nav__link ${pathname === "/our-updates" ? "mbsm-mobile-nav__link--active" : ""}`}
-              onClick={() => setMobileMenu(false)}
-            >
-              Our Updates
-            </Link>
+            {linksBeforeExplore.map(renderMobileLink)}
 
             {/* Explore Work accordion */}
             <div className={`mbsm-mobile-nav__group ${exploreActive ? "mbsm-mobile-nav__group--active" : ""}`}>
@@ -180,48 +177,21 @@ const HeaderOne = () => {
                 <i className={`fa-solid fa-chevron-down mbsm-mobile-nav__chevron ${exploreOpen ? "mbsm-mobile-nav__chevron--open" : ""}`} />
               </button>
               <div className={`mbsm-mobile-nav__sub ${exploreOpen ? "mbsm-mobile-nav__sub--open" : ""}`}>
-                <Link
-                  href='/our-causes'
-                  className={`mbsm-mobile-nav__sublink ${pathname === "/our-causes" ? "mbsm-mobile-nav__sublink--active" : ""}`}
-                  onClick={() => setMobileMenu(false)}
-                >
-                  <span className='mbsm-mobile-nav__subicon'><i className='fa-solid fa-seedling' /></span>
-                  Our Projects
-                </Link>
-                <Link
-                  href='/donate-us'
-                  className={`mbsm-mobile-nav__sublink ${pathname === "/donate-us" ? "mbsm-mobile-nav__sublink--active" : ""}`}
-                  onClick={() => setMobileMenu(false)}
-                >
-                  <span className='mbsm-mobile-nav__subicon'><i className='fa-solid fa-hand-holding-heart' /></span>
-                  Donate Us
-                </Link>
-                <Link
-                  href='/our-blogs'
-                  className={`mbsm-mobile-nav__sublink ${["/our-blogs", "/blog"].includes(pathname) ? "mbsm-mobile-nav__sublink--active" : ""}`}
-                  onClick={() => setMobileMenu(false)}
-                >
-                  <span className='mbsm-mobile-nav__subicon'><i className='fa-solid fa-book-open' /></span>
-                  Our Blogs
-                </Link>
+                {exploreItems.map(item => (
+                  <Link
+                    key={item.href}
+                    href={item.href}
+                    className={`mbsm-mobile-nav__sublink ${isExploreItemActive(item) ? "mbsm-mobile-nav__sublink--active" : ""}`}
+                    onClick={() => setMobileMenu(false)}
+                  >
+                    <span className='mbsm-mobile-nav__subicon'><i className={item.icon} /></span>
+                    {item.label}
+                  </Link>
+                ))}
               </div>
             </div>
 
-            <Link
-              href='/about-us'
-              className={`mbsm-mobile-nav__link ${pathname === "/about-us" ? "mbsm-mobile-nav__link--active" : ""}`}
-              onClick={() => setMobileMenu(false)}
-            >
-              About Us
-            </Link>
-
-            <Link
-              href='/contact-us'
-              className={`mbsm-mobile-nav__link ${pathname === "/contact-us" ? "mbsm-mobile-nav__link--active" : ""}`}
-              onClick={() => setMobileMenu(false)}
-            >
-              Contact Us
-            </Link>
+            {linksAfterExplore.map(renderMobileLink)}
           </nav>
 
           {/* CTA */}

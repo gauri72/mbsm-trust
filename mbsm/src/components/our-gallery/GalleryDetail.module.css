@@ -1,0 +1,49 @@
+/* show the whole square poster instead of the blog's wide crop */
+.poster {
+  width: 100%;
+  max-width: 560px;
+  height: auto !important;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+  margin: 0 auto;
+}
+
+.comingSoon {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-top: 28px;
+  padding: 18px 20px;
+  border-radius: 12px;
+  border: 1px dashed rgba(139, 30, 30, 0.4);
+  background-color: rgba(139, 30, 30, 0.05);
+}
+
+.comingSoonIcon {
+  flex-shrink: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  background-color: rgba(139, 30, 30, 0.1);
+  color: #8b1e1e;
+  font-size: 22px;
+}
+
+.comingSoon strong {
+  display: block;
+  line-height: 1.4;
+  margin-bottom: 4px;
+  font-size: 18px;
+  color: var(--secondary-color);
+}
+
+.comingSoon span:not(.comingSoonIcon) {
+  display: block;
+  font-size: 15px;
+  line-height: 1.5;
+}

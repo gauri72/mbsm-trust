@@ -1,3 +1,5 @@
+import { galleryItems } from "@/components/our-gallery/galleryData";
+
 const BASE_URL = "https://mbsmtrust.org";
 
 export default function sitemap() {
@@ -11,6 +13,10 @@ export default function sitemap() {
     "/donate-us",
     "/our-causes",
     "/our-blogs",
+    "/our-updates",
+    "/our-events",
+    "/our-publications",
+    "/our-gallery",
   ];
 
   const staticEntries = staticRoutes.map(path => ({
@@ -30,7 +36,15 @@ export default function sitemap() {
     priority: 0.7,
   }));
 
-  return [...staticEntries, ...blogEntries];
+  // Gallery album pages
+  const galleryEntries = galleryItems.map(item => ({
+    url: `${BASE_URL}/our-gallery/${item.slug}`,
+    lastModified: now,
+    changeFrequency: "weekly",
+    priority: 0.6,
+  }));
+
+  return [...staticEntries, ...blogEntries, ...galleryEntries];
 }
 
 
