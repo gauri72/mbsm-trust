@@ -1,15 +1,49 @@
-/* show the whole square poster instead of the blog's wide crop */
-.poster {
-  width: 100%;
-  max-width: 560px;
-  height: auto !important;
-  aspect-ratio: 1 / 1;
-  object-fit: cover;
-  object-position: center;
-  display: block;
+.detail {
+  padding: 120px 0;
+}
+
+/* ── Intro: poster + story ── */
+.intro {
+  row-gap: 40px;
+}
+
+.posterWrap {
+  position: relative;
+  max-width: 480px;
   margin: 0 auto;
 }
 
+/* soft offset frame behind the poster */
+.posterWrap::before {
+  content: "";
+  position: absolute;
+  inset: 18px -18px -18px 18px;
+  border-radius: 20px;
+  background-color: rgba(139, 30, 30, 0.08);
+}
+
+.poster {
+  position: relative;
+  display: block;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: 20px;
+  box-shadow: 0 24px 48px rgba(18, 47, 42, 0.12);
+}
+
+.introText {
+  margin-bottom: 0;
+}
+
+.introText p {
+  margin-top: 16px;
+  margin-bottom: 0;
+  font-size: 17px;
+  line-height: 1.75;
+}
+
+/* ── Coming soon (albums without photos yet) ── */
 .comingSoon {
   display: flex;
   align-items: center;
@@ -46,4 +80,42 @@
   display: block;
   font-size: 15px;
   line-height: 1.5;
+}
+
+@media (min-width: 992px) {
+  .introText,
+  .comingSoon {
+    margin-left: 40px;
+  }
+}
+
+/* ── Back to gallery ── */
+.back {
+  display: flex;
+  justify-content: center;
+  margin-top: 64px;
+}
+
+.back i {
+  margin-right: 8px;
+}
+
+@media (max-width: 991px) {
+  .detail {
+    padding: 80px 0;
+  }
+}
+
+@media (max-width: 575px) {
+  .detail {
+    padding: 60px 0;
+  }
+
+  .posterWrap::before {
+    inset: 12px -10px -12px 10px;
+  }
+
+  .back {
+    margin-top: 44px;
+  }
 }

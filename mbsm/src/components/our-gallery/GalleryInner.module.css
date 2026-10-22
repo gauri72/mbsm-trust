@@ -81,3 +81,15 @@
   color: var(--secondary-color);
   margin-bottom: 8px;
 }
+
+/* the theme makes this column a flexbox, so stretch the header to keep it centred */
+.header {
+  width: 100%;
+}
+
+/* keep the tagline on one line wherever it fits */
+@media (min-width: 992px) {
+  .tagline {
+    white-space: nowrap;
+  }
+}

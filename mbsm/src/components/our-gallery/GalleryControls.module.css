@@ -1,0 +1,101 @@
+/* one red for every gallery control — matches the section label */
+.filters,
+.pagination {
+  --accent: #9b1a2f;
+  --accent-dark: #7a1424;
+}
+
+/* ── Category pills ── */
+.filters {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  margin: 0 0 44px;
+  padding: 0;
+  list-style: none;
+}
+
+.filter {
+  display: inline-flex;
+  align-items: center;
+  padding: 12px 28px;
+  border: 2px solid var(--accent);
+  border-radius: 30px;
+  background-color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--accent);
+  transition: all 0.3s ease;
+}
+
+.filter:hover {
+  background-color: var(--accent);
+  color: #fff;
+}
+
+.filterActive,
+.filterActive:hover {
+  border-color: var(--accent-dark);
+  background-color: var(--accent-dark);
+  color: #fff;
+  box-shadow: 0 8px 20px rgba(155, 26, 47, 0.25);
+}
+
+/* ── Pagination: previous / next only ── */
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  margin-top: 48px;
+}
+
+.pageArrow {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 52px;
+  height: 52px;
+  border: 2px solid var(--accent);
+  border-radius: 50%;
+  background-color: var(--accent);
+  font-size: 18px;
+  color: #fff;
+  transition: all 0.3s ease;
+}
+
+.pageArrow:hover:not(:disabled) {
+  border-color: var(--accent-dark);
+  background-color: var(--accent-dark);
+  box-shadow: 0 8px 20px rgba(155, 26, 47, 0.25);
+}
+
+.pageArrow:disabled {
+  background-color: #fff;
+  color: var(--accent);
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+@media (max-width: 767px) {
+  .filters {
+    gap: 10px;
+    margin-bottom: 28px;
+  }
+
+  .filter {
+    padding: 8px 18px;
+    font-size: 14px;
+  }
+
+  .pagination {
+    margin-top: 32px;
+  }
+
+  .pageArrow {
+    width: 46px;
+    height: 46px;
+    font-size: 16px;
+  }
+}

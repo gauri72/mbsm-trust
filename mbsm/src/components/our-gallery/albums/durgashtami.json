@@ -1,0 +1,112 @@
+[
+  {
+    "src": "our gallery/events/events-1/banner-1.png",
+    "thumb": "our gallery/events/events-1/thumbs/banner-1.jpg",
+    "type": "photo",
+    "date": null,
+    "width": 480,
+    "height": 720,
+    "focus": [
+      0.5,
+      0
+    ]
+  },
+  {
+    "src": "our gallery/events/events-1/photos-1.png",
+    "thumb": "our gallery/events/events-1/thumbs/photos-1.jpg",
+    "type": "photo",
+    "date": null,
+    "width": 404,
+    "height": 720,
+    "focus": [
+      0.526,
+      0.365
+    ]
+  },
+  {
+    "src": "our gallery/events/events-1/photos-2.png",
+    "thumb": "our gallery/events/events-1/thumbs/photos-2.jpg",
+    "type": "photo",
+    "date": null,
+    "width": 404,
+    "height": 720,
+    "focus": [
+      0.34,
+      0.512
+    ]
+  },
+  {
+    "src": "our gallery/events/events-1/photos-3.png",
+    "thumb": "our gallery/events/events-1/thumbs/photos-3.jpg",
+    "type": "photo",
+    "date": null,
+    "width": 404,
+    "height": 720,
+    "focus": [
+      0.922,
+      0.454
+    ]
+  },
+  {
+    "src": "our gallery/events/events-1/photos-4.png",
+    "thumb": "our gallery/events/events-1/thumbs/photos-4.jpg",
+    "type": "photo",
+    "date": null,
+    "width": 404,
+    "height": 720,
+    "focus": [
+      0.807,
+      0.2
+    ]
+  },
+  {
+    "src": "our gallery/events/events-1/photos-5.png",
+    "thumb": "our gallery/events/events-1/thumbs/photos-5.jpg",
+    "type": "photo",
+    "date": null,
+    "width": 405,
+    "height": 720,
+    "focus": [
+      0.465,
+      0.339
+    ]
+  },
+  {
+    "src": "our gallery/events/events-1/photos-6.png",
+    "thumb": "our gallery/events/events-1/thumbs/photos-6.jpg",
+    "type": "photo",
+    "date": null,
+    "width": 404,
+    "height": 720,
+    "focus": [
+      0.803,
+      0.389
+    ]
+  },
+  {
+    "src": "our gallery/events/events-1/videos-1.mp4",
+    "thumb": "our gallery/events/events-1/thumbs/videos-1.jpg",
+    "type": "video",
+    "date": null,
+    "duration": 52,
+    "width": 720,
+    "height": 406,
+    "focus": [
+      0.694,
+      0.121
+    ]
+  },
+  {
+    "src": "our gallery/events/events-1/videos-2.mp4",
+    "thumb": "our gallery/events/events-1/thumbs/videos-2.jpg",
+    "type": "video",
+    "date": null,
+    "duration": 46,
+    "width": 404,
+    "height": 720,
+    "focus": [
+      0.508,
+      0.374
+    ]
+  }
+]

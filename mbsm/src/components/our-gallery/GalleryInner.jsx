@@ -2,6 +2,7 @@
 import { useState, useMemo } from "react";
 import Link from "next/link";
 import { galleryItems, galleryCategories as categories, galleryImageSrc } from "./galleryData";
+import { FilterPills, Pagination } from "./GalleryControls";
 import styles from "./GalleryInner.module.css";
 
 const GalleryInner = () => {
@@ -26,8 +27,8 @@ const GalleryInner = () => {
     <section className='cause cause-three-alt'>
       <div className='container'>
         <div className='row justify-content-center'>
-          <div className='col-12 col-md-8 col-xl-7'>
-            <div className='section__header mb-60 text-center' data-aos='fade-up' data-aos-duration={1000}>
+          <div className='col-12 col-md-10'>
+            <div className={`section__header mb-60 text-center ${styles.header}`} data-aos='fade-up' data-aos-duration={1000}>
               <span className='sub-title'>
                 <i className='icon-donation' />
                 Where there's less, we give our best!
@@ -35,32 +36,20 @@ const GalleryInner = () => {
               <h2 className='title-animation_inner'>
                 Moments of <span>Devotion</span>
               </h2>
-              <p>
-                A journey of bhakti, where every moment is an offering to Sadguru Shree Shankar Maharaj.
+              <p className={styles.tagline}>
+                We owe something to the society we live in, and we do this seva with a sense of duty towards it.
               </p>
             </div>
           </div>
         </div>
 
         {/* Category Filter Buttons */}
-        <div className='row'>
-          <div className='col-12'>
-            <div className='cause__filter mb-50' data-aos='fade-up' data-aos-duration={1000}>
-              <ul className='cause__filter-list'>
-                {categories.map(category => (
-                  <li key={category}>
-                    <button
-                      type='button'
-                      className={selectedCategory === category ? "active" : ""}
-                      onClick={() => handleCategoryChange(category)}
-                    >
-                      {category}
-                    </button>
-                  </li>
-                ))}
-              </ul>
-            </div>
-          </div>
+        <div data-aos='fade-up' data-aos-duration={1000}>
+          <FilterPills
+            options={categories.map(category => ({ key: category, label: category }))}
+            value={selectedCategory}
+            onChange={handleCategoryChange}
+          />
         </div>
 
         {currentItems.length === 0 && (
@@ -71,7 +60,7 @@ const GalleryInner = () => {
           </div>
         )}
 
-        <div className='row gutter-30'>
+        <div className='row gutter-30 justify-content-center'>
           {currentItems.map((item, index) => (
             <div key={item.slug} className='col-12 col-md-6 col-xl-3 col-xxl-3'>
               <div
@@ -100,45 +89,7 @@ const GalleryInner = () => {
         </div>
 
         {/* Pagination */}
-        {totalPages > 1 && (
-          <div className='row'>
-            <div className='col-12'>
-              <div className='pagination-wrapper' data-aos='fade-up' data-aos-duration={1000}>
-                <ul className='pagination main-pagination'>
-                  <li>
-                    <button
-                      type='button'
-                      onClick={() => setCurrentPage(prev => Math.max(1, prev - 1))}
-                      disabled={currentPage === 1}
-                    >
-                      <i className='fa-solid fa-angles-left' />
-                    </button>
-                  </li>
-                  {Array.from({ length: totalPages }, (_, i) => i + 1).map(pageNum => (
-                    <li key={pageNum}>
-                      <button
-                        type='button'
-                        className={currentPage === pageNum ? "active" : ""}
-                        onClick={() => setCurrentPage(pageNum)}
-                      >
-                        {pageNum}
-                      </button>
-                    </li>
-                  ))}
-                  <li>
-                    <button
-                      type='button'
-                      onClick={() => setCurrentPage(prev => Math.min(totalPages, prev + 1))}
-                      disabled={currentPage === totalPages}
-                    >
-                      <i className='fa-solid fa-angles-right' />
-                    </button>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        )}
+        <Pagination page={currentPage} totalPages={totalPages} onChange={setCurrentPage} />
       </div>
       <div className='spade'>
         <img src='/assets/images/help/spade.png' alt='Image_inner' />
